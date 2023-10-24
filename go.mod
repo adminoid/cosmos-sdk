@@ -184,6 +184,8 @@ replace (
 	// Fix upstream GHSA-h395-qcrw-5vmq vulnerability.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.8.1
+	//cosmossdk.io/api => ../api
+	//cosmossdk.io => ../
 )
 
 retract (
