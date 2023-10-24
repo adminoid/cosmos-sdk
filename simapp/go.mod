@@ -1,4 +1,5 @@
-module cosmossdk.io/simapp
+//module cosmossdk.io/simapp
+module github.com/adminoid/cosmos-sdk/simapp
 
 go 1.19
 
@@ -12,8 +13,8 @@ require (
 	cosmossdk.io/tools/rosetta v0.2.0
 	github.com/cosmos/cosmos-db v0.0.0-20221226095112-f3c38ecb5e32
 	// this version is not used as it is always replaced by the latest cosmos-sdk version
-	github.com/cosmos/cosmos-sdk v0.47.0-rc1
-	github.com/cosmos/cosmos-sdk/x/nft v0.1.0-alpha1
+	github.com/adminoid/cosmos-sdk v0.47.0-rc1
+	github.com/adminoid/cosmos-sdk/x/nft v0.1.0-alpha1
 	github.com/golang/mock v1.6.0
 	github.com/spf13/cast v1.5.0
 	github.com/spf13/cobra v1.6.1
@@ -188,8 +189,8 @@ replace (
 	cosmossdk.io/tools/confix => ../tools/confix
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Simapp always use the latest version of the cosmos-sdk
-	github.com/cosmos/cosmos-sdk => ../.
+	github.com/adminoid/cosmos-sdk => ../.
 	// Fix upstream GHSA-h395-qcrw-5vmq vulnerability.
-	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
+	// TODO Remove it: https://github.com/adminoid/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.8.1
 )

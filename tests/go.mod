@@ -1,4 +1,4 @@
-module github.com/cosmos/cosmos-sdk/tests
+module github.com/adminoid/cosmos-sdk/tests
 
 go 1.19
 
@@ -6,10 +6,11 @@ require (
 	cosmossdk.io/api v0.2.6
 	cosmossdk.io/depinject v1.0.0-alpha.3
 	cosmossdk.io/math v1.0.0-beta.4
-	cosmossdk.io/simapp v0.0.0-00010101000000-000000000000
+	//cosmossdk.io/simapp v0.0.0-00010101000000-000000000000
+	github.com/adminoid/cosmos-sdk/simapp v0.0.0-00010101000000-000000000000
 	github.com/cosmos/cosmos-db v0.0.0-20221226095112-f3c38ecb5e32
 	// this version is not used as it is always replaced by the latest cosmos-sdk version
-	github.com/cosmos/cosmos-sdk v0.47.0-rc1
+	github.com/cosmos/cosmos-sdk v0.51.0
 	github.com/cosmos/cosmos-sdk/x/nft v0.1.0-alpha1
 	github.com/cosmos/gogoproto v1.4.3
 	github.com/golang/mock v1.6.0
