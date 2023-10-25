@@ -7,9 +7,9 @@ import (
 	dbm "github.com/cosmos/cosmos-db"
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/cosmos/cosmos-sdk/version"
+	"github.com/adminoid/cosmos-sdk/baseapp"
+	"github.com/adminoid/cosmos-sdk/types/module"
+	"github.com/adminoid/cosmos-sdk/version"
 )
 
 // AppBuilder is a type that is injected into a container by the runtime module

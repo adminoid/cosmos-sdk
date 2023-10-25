@@ -3,13 +3,13 @@ package ormtable
 import (
 	"context"
 
-	"github.com/cosmos/cosmos-sdk/orm/types/kv"
+	"github.com/adminoid/cosmos-sdk/orm/types/kv"
 
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protoreflect"
 
-	"github.com/cosmos/cosmos-sdk/orm/encoding/ormkv"
-	"github.com/cosmos/cosmos-sdk/orm/model/ormlist"
+	"github.com/adminoid/cosmos-sdk/orm/encoding/ormkv"
+	"github.com/adminoid/cosmos-sdk/orm/model/ormlist"
 )
 
 // Index defines an index on a table. Index instances

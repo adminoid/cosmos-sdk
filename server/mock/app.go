@@ -13,11 +13,11 @@ import (
 	"github.com/tendermint/tendermint/types"
 	"google.golang.org/grpc"
 
-	bam "github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	storetypes "github.com/cosmos/cosmos-sdk/store/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	bam "github.com/adminoid/cosmos-sdk/baseapp"
+	"github.com/adminoid/cosmos-sdk/codec"
+	codectypes "github.com/adminoid/cosmos-sdk/codec/types"
+	storetypes "github.com/adminoid/cosmos-sdk/store/types"
+	sdk "github.com/adminoid/cosmos-sdk/types"
 )
 
 // NewApp creates a simple mock kvstore app for testing. It should work
@@ -102,7 +102,7 @@ func InitChainer(key storetypes.StoreKey) func(sdk.Context, abci.RequestInitChai
 		genesisState := new(GenesisJSON)
 		err := json.Unmarshal(stateJSON, genesisState)
 		if err != nil {
-			panic(err) // TODO https://github.com/cosmos/cosmos-sdk/issues/468
+			panic(err) // TODO https://github.com/adminoid/cosmos-sdk/issues/468
 			// return sdk.ErrGenesisParse("").TraceCause(err, "")
 		}
 

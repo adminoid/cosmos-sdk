@@ -7,14 +7,14 @@ import (
 
 	"cosmossdk.io/math"
 
-	"github.com/cosmos/cosmos-sdk/store/prefix"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/address"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	v2 "github.com/cosmos/cosmos-sdk/x/bank/migrations/v2"
-	v3 "github.com/cosmos/cosmos-sdk/x/bank/migrations/v3"
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/adminoid/cosmos-sdk/store/prefix"
+	"github.com/adminoid/cosmos-sdk/testutil"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	"github.com/adminoid/cosmos-sdk/types/address"
+	moduletestutil "github.com/adminoid/cosmos-sdk/types/module/testutil"
+	v2 "github.com/adminoid/cosmos-sdk/x/bank/migrations/v2"
+	v3 "github.com/adminoid/cosmos-sdk/x/bank/migrations/v3"
+	"github.com/adminoid/cosmos-sdk/x/bank/types"
 )
 
 func TestMigrateStore(t *testing.T) {

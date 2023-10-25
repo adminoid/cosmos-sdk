@@ -6,11 +6,11 @@ import (
 	"github.com/golang/mock/gomock"
 
 	"cosmossdk.io/math"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/adminoid/cosmos-sdk/types"
 
-	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
-	"github.com/cosmos/cosmos-sdk/x/staking/testutil"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	stakingkeeper "github.com/adminoid/cosmos-sdk/x/staking/keeper"
+	"github.com/adminoid/cosmos-sdk/x/staking/testutil"
+	stakingtypes "github.com/adminoid/cosmos-sdk/x/staking/types"
 	abci "github.com/tendermint/tendermint/abci/types"
 )
 

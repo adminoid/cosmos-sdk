@@ -7,9 +7,9 @@ import (
 	dbm "github.com/cosmos/cosmos-db"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/store/dbadapter"
-	"github.com/cosmos/cosmos-sdk/store/gaskv"
-	"github.com/cosmos/cosmos-sdk/store/types"
+	"github.com/adminoid/cosmos-sdk/store/dbadapter"
+	"github.com/adminoid/cosmos-sdk/store/gaskv"
+	"github.com/adminoid/cosmos-sdk/store/types"
 )
 
 func bz(s string) []byte { return []byte(s) }

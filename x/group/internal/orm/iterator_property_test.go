@@ -7,10 +7,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"pgregory.net/rapid"
 
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/x/group/errors"
+	"github.com/adminoid/cosmos-sdk/testutil/testdata"
+	sdkerrors "github.com/adminoid/cosmos-sdk/types/errors"
+	"github.com/adminoid/cosmos-sdk/types/query"
+	"github.com/adminoid/cosmos-sdk/x/group/errors"
 )
 
 func TestPaginationProperty(t *testing.T) {

@@ -5,19 +5,19 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/cosmos-sdk/x/group"
-	"github.com/cosmos/cosmos-sdk/x/group/errors"
-	"github.com/cosmos/cosmos-sdk/x/group/internal/math"
-	"github.com/cosmos/cosmos-sdk/x/group/internal/orm"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	sdkerrors "github.com/adminoid/cosmos-sdk/types/errors"
+	authtypes "github.com/adminoid/cosmos-sdk/x/auth/types"
+	"github.com/adminoid/cosmos-sdk/x/group"
+	"github.com/adminoid/cosmos-sdk/x/group/errors"
+	"github.com/adminoid/cosmos-sdk/x/group/internal/math"
+	"github.com/adminoid/cosmos-sdk/x/group/internal/orm"
 )
 
 var _ group.MsgServer = Keeper{}
 
 // TODO: Revisit this once we have proper gas fee framework.
-// Tracking issues https://github.com/cosmos/cosmos-sdk/issues/9054, https://github.com/cosmos/cosmos-sdk/discussions/9072
+// Tracking issues https://github.com/adminoid/cosmos-sdk/issues/9054, https://github.com/adminoid/cosmos-sdk/discussions/9072
 const gasCostPerIteration = uint64(20)
 
 func (k Keeper) CreateGroup(goCtx context.Context, req *group.MsgCreateGroup) (*group.MsgCreateGroupResponse, error) {

@@ -9,17 +9,17 @@ import (
 	dbm "github.com/cosmos/cosmos-db"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/store"
+	"github.com/adminoid/cosmos-sdk/codec"
+	"github.com/adminoid/cosmos-sdk/codec/types"
+	"github.com/adminoid/cosmos-sdk/store"
 
-	"github.com/cosmos/cosmos-sdk/store/metrics"
-	storetypes "github.com/cosmos/cosmos-sdk/store/types"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/group"
-	"github.com/cosmos/cosmos-sdk/x/group/internal/orm"
-	"github.com/cosmos/cosmos-sdk/x/group/keeper"
+	"github.com/adminoid/cosmos-sdk/store/metrics"
+	storetypes "github.com/adminoid/cosmos-sdk/store/types"
+	"github.com/adminoid/cosmos-sdk/testutil/testdata"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	"github.com/adminoid/cosmos-sdk/x/group"
+	"github.com/adminoid/cosmos-sdk/x/group/internal/orm"
+	"github.com/adminoid/cosmos-sdk/x/group/keeper"
 )
 
 type invariantTestSuite struct {

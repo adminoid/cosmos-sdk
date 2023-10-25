@@ -1,11 +1,11 @@
 package v2
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
-	storetypes "github.com/cosmos/cosmos-sdk/store/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/x/crisis/exported"
+	"github.com/adminoid/cosmos-sdk/codec"
+	storetypes "github.com/adminoid/cosmos-sdk/store/types"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	"github.com/adminoid/cosmos-sdk/types/errors"
+	"github.com/adminoid/cosmos-sdk/x/crisis/exported"
 )
 
 const (

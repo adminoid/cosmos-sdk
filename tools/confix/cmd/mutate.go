@@ -12,7 +12,7 @@ import (
 	"github.com/creachadair/tomledit/transform"
 	"github.com/spf13/cobra"
 
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/adminoid/cosmos-sdk/client"
 )
 
 // SetCommand returns a CLI command to interactively update an application config value.

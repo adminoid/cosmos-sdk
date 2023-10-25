@@ -9,7 +9,7 @@ import (
 
 	"cosmossdk.io/depinject"
 
-	"github.com/cosmos/cosmos-sdk/runtime"
+	"github.com/adminoid/cosmos-sdk/runtime"
 
 	dbm "github.com/cosmos/cosmos-db"
 	"github.com/stretchr/testify/require"
@@ -17,21 +17,21 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	baseapptestutil "github.com/cosmos/cosmos-sdk/baseapp/testutil"
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/store/metrics"
-	pruningtypes "github.com/cosmos/cosmos-sdk/store/pruning/types"
-	"github.com/cosmos/cosmos-sdk/store/rootmulti"
-	"github.com/cosmos/cosmos-sdk/store/snapshots"
-	snapshottypes "github.com/cosmos/cosmos-sdk/store/snapshots/types"
-	storetypes "github.com/cosmos/cosmos-sdk/store/types"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
+	"github.com/adminoid/cosmos-sdk/baseapp"
+	baseapptestutil "github.com/adminoid/cosmos-sdk/baseapp/testutil"
+	"github.com/adminoid/cosmos-sdk/client"
+	"github.com/adminoid/cosmos-sdk/codec"
+	codectypes "github.com/adminoid/cosmos-sdk/codec/types"
+	"github.com/adminoid/cosmos-sdk/store/metrics"
+	pruningtypes "github.com/adminoid/cosmos-sdk/store/pruning/types"
+	"github.com/adminoid/cosmos-sdk/store/rootmulti"
+	"github.com/adminoid/cosmos-sdk/store/snapshots"
+	snapshottypes "github.com/adminoid/cosmos-sdk/store/snapshots/types"
+	storetypes "github.com/adminoid/cosmos-sdk/store/types"
+	"github.com/adminoid/cosmos-sdk/testutil"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	sdkerrors "github.com/adminoid/cosmos-sdk/types/errors"
+	authtx "github.com/adminoid/cosmos-sdk/x/auth/tx"
 )
 
 var (
@@ -543,8 +543,8 @@ func TestBaseAppAnteHandler(t *testing.T) {
 
 // Test and ensure that invalid block heights always cause errors.
 // See issues:
-// - https://github.com/cosmos/cosmos-sdk/issues/11220
-// - https://github.com/cosmos/cosmos-sdk/issues/7662
+// - https://github.com/adminoid/cosmos-sdk/issues/11220
+// - https://github.com/adminoid/cosmos-sdk/issues/7662
 func TestABCI_CreateQueryContext(t *testing.T) {
 	t.Parallel()
 

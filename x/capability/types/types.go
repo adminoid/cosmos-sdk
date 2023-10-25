@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sort"
 
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdkerrors "github.com/adminoid/cosmos-sdk/types/errors"
 )
 
 // NewCapability returns a reference to a new Capability to be used as an

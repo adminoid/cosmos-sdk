@@ -6,17 +6,17 @@ import (
 
 	dbm "github.com/cosmos/cosmos-db"
 
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	servertypes "github.com/cosmos/cosmos-sdk/server/types"
-	"github.com/cosmos/cosmos-sdk/store"
-	"github.com/cosmos/cosmos-sdk/store/metrics"
-	pruningtypes "github.com/cosmos/cosmos-sdk/store/pruning/types"
-	"github.com/cosmos/cosmos-sdk/store/snapshots"
-	snapshottypes "github.com/cosmos/cosmos-sdk/store/snapshots/types"
-	"github.com/cosmos/cosmos-sdk/store/streaming"
-	storetypes "github.com/cosmos/cosmos-sdk/store/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/mempool"
+	"github.com/adminoid/cosmos-sdk/codec/types"
+	servertypes "github.com/adminoid/cosmos-sdk/server/types"
+	"github.com/adminoid/cosmos-sdk/store"
+	"github.com/adminoid/cosmos-sdk/store/metrics"
+	pruningtypes "github.com/adminoid/cosmos-sdk/store/pruning/types"
+	"github.com/adminoid/cosmos-sdk/store/snapshots"
+	snapshottypes "github.com/adminoid/cosmos-sdk/store/snapshots/types"
+	"github.com/adminoid/cosmos-sdk/store/streaming"
+	storetypes "github.com/adminoid/cosmos-sdk/store/types"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	"github.com/adminoid/cosmos-sdk/types/mempool"
 )
 
 // File for storing in-package BaseApp optional functions,
@@ -269,7 +269,7 @@ func (app *BaseApp) SetTxEncoder(txEncoder sdk.TxEncoder) {
 
 // SetQueryMultiStore set a alternative MultiStore implementation to support grpc query service.
 //
-// Ref: https://github.com/cosmos/cosmos-sdk/issues/13317
+// Ref: https://github.com/adminoid/cosmos-sdk/issues/13317
 func (app *BaseApp) SetQueryMultiStore(ms sdk.MultiStore) {
 	app.qms = ms
 }

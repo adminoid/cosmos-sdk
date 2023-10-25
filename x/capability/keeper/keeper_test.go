@@ -6,12 +6,12 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/capability"
-	"github.com/cosmos/cosmos-sdk/x/capability/keeper"
-	"github.com/cosmos/cosmos-sdk/x/capability/types"
+	"github.com/adminoid/cosmos-sdk/testutil"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	moduletestutil "github.com/adminoid/cosmos-sdk/types/module/testutil"
+	"github.com/adminoid/cosmos-sdk/x/capability"
+	"github.com/adminoid/cosmos-sdk/x/capability/keeper"
+	"github.com/adminoid/cosmos-sdk/x/capability/types"
 )
 
 var (

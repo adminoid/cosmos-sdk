@@ -6,9 +6,9 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"cosmossdk.io/depinject"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/x/group"
-	"github.com/cosmos/cosmos-sdk/x/group/testutil"
+	"github.com/adminoid/cosmos-sdk/codec"
+	"github.com/adminoid/cosmos-sdk/x/group"
+	"github.com/adminoid/cosmos-sdk/x/group/testutil"
 )
 
 // TestGogoUnmarshalProposal tests some weird behavior in gogoproto

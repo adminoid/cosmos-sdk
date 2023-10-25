@@ -3,10 +3,10 @@ package keyring
 import (
 	"errors"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/types"
+	codectypes "github.com/adminoid/cosmos-sdk/codec/types"
+	"github.com/adminoid/cosmos-sdk/crypto/hd"
+	cryptotypes "github.com/adminoid/cosmos-sdk/crypto/types"
+	"github.com/adminoid/cosmos-sdk/types"
 )
 
 // ErrPrivKeyExtr is used to output an error if extraction of a private key from Local item fails

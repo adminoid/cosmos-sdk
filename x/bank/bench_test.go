@@ -9,14 +9,14 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/cosmos-sdk/x/bank/testutil"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/adminoid/cosmos-sdk/client"
+	cryptotypes "github.com/adminoid/cosmos-sdk/crypto/types"
+	simtestutil "github.com/adminoid/cosmos-sdk/testutil/sims"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	moduletestutil "github.com/adminoid/cosmos-sdk/types/module/testutil"
+	authtypes "github.com/adminoid/cosmos-sdk/x/auth/types"
+	"github.com/adminoid/cosmos-sdk/x/bank/testutil"
+	stakingtypes "github.com/adminoid/cosmos-sdk/x/staking/types"
 )
 
 var moduleAccAddr = authtypes.NewModuleAddress(stakingtypes.BondedPoolName)
@@ -58,7 +58,7 @@ func genSequenceOfTxs(txGen client.TxConfig,
 }
 
 func BenchmarkOneBankSendTxPerBlock(b *testing.B) {
-	// b.Skip("Skipping benchmark with buggy code reported at https://github.com/cosmos/cosmos-sdk/issues/10023")
+	// b.Skip("Skipping benchmark with buggy code reported at https://github.com/adminoid/cosmos-sdk/issues/10023")
 
 	b.ReportAllocs()
 	// Add an account at genesis
@@ -103,7 +103,7 @@ func BenchmarkOneBankSendTxPerBlock(b *testing.B) {
 }
 
 func BenchmarkOneBankMultiSendTxPerBlock(b *testing.B) {
-	// b.Skip("Skipping benchmark with buggy code reported at https://github.com/cosmos/cosmos-sdk/issues/10023")
+	// b.Skip("Skipping benchmark with buggy code reported at https://github.com/adminoid/cosmos-sdk/issues/10023")
 
 	b.ReportAllocs()
 	// Add an account at genesis

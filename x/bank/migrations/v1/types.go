@@ -1,11 +1,11 @@
 package v1
 
 import (
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/kv"
-	v1auth "github.com/cosmos/cosmos-sdk/x/auth/migrations/v1"
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
+	codectypes "github.com/adminoid/cosmos-sdk/codec/types"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	"github.com/adminoid/cosmos-sdk/types/kv"
+	v1auth "github.com/adminoid/cosmos-sdk/x/auth/migrations/v1"
+	"github.com/adminoid/cosmos-sdk/x/bank/types"
 	"github.com/golang/protobuf/proto"
 )
 
@@ -49,7 +49,7 @@ func AddressFromBalancesStore(key []byte) sdk.AccAddress {
 // SupplyI defines an inflationary supply interface for modules that handle
 // token supply.
 // It is copy-pasted from:
-// https://github.com/cosmos/cosmos-sdk/blob/v0.42.3/x/bank/exported/exported.go
+// https://github.com/adminoid/cosmos-sdk/blob/v0.42.3/x/bank/exported/exported.go
 // where we stripped off the unnecessary methods.
 //
 // It is used in the migration script, because we save this interface as an Any

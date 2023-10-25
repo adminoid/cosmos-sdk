@@ -9,15 +9,15 @@ import (
 	design99keyring "github.com/99designs/keyring"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	clienttestutil "github.com/cosmos/cosmos-sdk/client/testutil"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/testutil"
+	"github.com/adminoid/cosmos-sdk/client"
+	"github.com/adminoid/cosmos-sdk/client/flags"
+	clienttestutil "github.com/adminoid/cosmos-sdk/client/testutil"
+	"github.com/adminoid/cosmos-sdk/codec"
+	"github.com/adminoid/cosmos-sdk/crypto/keyring"
+	"github.com/adminoid/cosmos-sdk/crypto/keys/multisig"
+	"github.com/adminoid/cosmos-sdk/crypto/keys/secp256k1"
+	cryptotypes "github.com/adminoid/cosmos-sdk/crypto/types"
+	"github.com/adminoid/cosmos-sdk/testutil"
 )
 
 type setter interface {

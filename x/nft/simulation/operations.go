@@ -3,17 +3,17 @@ package simulation
 import (
 	"math/rand"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/codec"
-	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/auth/tx"
-	"github.com/cosmos/cosmos-sdk/x/simulation"
+	"github.com/adminoid/cosmos-sdk/baseapp"
+	"github.com/adminoid/cosmos-sdk/codec"
+	cdctypes "github.com/adminoid/cosmos-sdk/codec/types"
+	simtestutil "github.com/adminoid/cosmos-sdk/testutil/sims"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	simtypes "github.com/adminoid/cosmos-sdk/types/simulation"
+	"github.com/adminoid/cosmos-sdk/x/auth/tx"
+	"github.com/adminoid/cosmos-sdk/x/simulation"
 
-	"github.com/cosmos/cosmos-sdk/x/nft"
-	"github.com/cosmos/cosmos-sdk/x/nft/keeper"
+	"github.com/adminoid/cosmos-sdk/x/nft"
+	"github.com/adminoid/cosmos-sdk/x/nft/keeper"
 )
 
 //nolint:gosec // these are not hardcoded credentials.

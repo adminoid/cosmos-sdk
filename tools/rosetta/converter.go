@@ -17,16 +17,16 @@ import (
 	crgerrs "cosmossdk.io/tools/rosetta/lib/errors"
 	crgtypes "cosmossdk.io/tools/rosetta/lib/types"
 
-	sdkclient "github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	authsigning "github.com/cosmos/cosmos-sdk/x/auth/signing"
-	auth "github.com/cosmos/cosmos-sdk/x/auth/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
+	sdkclient "github.com/adminoid/cosmos-sdk/client"
+	"github.com/adminoid/cosmos-sdk/codec"
+	codectypes "github.com/adminoid/cosmos-sdk/codec/types"
+	"github.com/adminoid/cosmos-sdk/crypto/keys/secp256k1"
+	cryptotypes "github.com/adminoid/cosmos-sdk/crypto/types"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	"github.com/adminoid/cosmos-sdk/types/tx/signing"
+	authsigning "github.com/adminoid/cosmos-sdk/x/auth/signing"
+	auth "github.com/adminoid/cosmos-sdk/x/auth/types"
+	banktypes "github.com/adminoid/cosmos-sdk/x/bank/types"
 )
 
 // Converter is a utility that can be used to convert

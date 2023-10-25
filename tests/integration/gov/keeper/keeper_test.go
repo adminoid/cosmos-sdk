@@ -7,14 +7,14 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	"gotest.tools/v3/assert"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/gov/keeper"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
-	"github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
-	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
+	"github.com/adminoid/cosmos-sdk/baseapp"
+	simtestutil "github.com/adminoid/cosmos-sdk/testutil/sims"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	"github.com/adminoid/cosmos-sdk/x/gov/keeper"
+	"github.com/adminoid/cosmos-sdk/x/gov/types"
+	v1 "github.com/adminoid/cosmos-sdk/x/gov/types/v1"
+	"github.com/adminoid/cosmos-sdk/x/gov/types/v1beta1"
+	minttypes "github.com/adminoid/cosmos-sdk/x/mint/types"
 )
 
 // fixture only tests gov's keeper logic around tallying, since it

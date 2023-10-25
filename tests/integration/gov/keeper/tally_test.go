@@ -5,11 +5,11 @@ import (
 
 	"gotest.tools/v3/assert"
 
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
-	"github.com/cosmos/cosmos-sdk/x/staking"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	simtestutil "github.com/adminoid/cosmos-sdk/testutil/sims"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	v1 "github.com/adminoid/cosmos-sdk/x/gov/types/v1"
+	"github.com/adminoid/cosmos-sdk/x/staking"
+	stakingtypes "github.com/adminoid/cosmos-sdk/x/staking/types"
 )
 
 func TestTallyNoOneVotes(t *testing.T) {

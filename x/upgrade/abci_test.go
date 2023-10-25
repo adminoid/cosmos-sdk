@@ -11,20 +11,20 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
-	govtypesv1beta1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
-	"github.com/cosmos/cosmos-sdk/x/upgrade"
-	"github.com/cosmos/cosmos-sdk/x/upgrade/keeper"
+	"github.com/adminoid/cosmos-sdk/baseapp"
+	"github.com/adminoid/cosmos-sdk/testutil"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	sdkerrors "github.com/adminoid/cosmos-sdk/types/errors"
+	"github.com/adminoid/cosmos-sdk/types/module"
+	moduletestutil "github.com/adminoid/cosmos-sdk/types/module/testutil"
+	authtypes "github.com/adminoid/cosmos-sdk/x/auth/types"
+	govtypes "github.com/adminoid/cosmos-sdk/x/gov/types"
+	govtypesv1beta1 "github.com/adminoid/cosmos-sdk/x/gov/types/v1beta1"
+	"github.com/adminoid/cosmos-sdk/x/upgrade"
+	"github.com/adminoid/cosmos-sdk/x/upgrade/keeper"
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/cosmos/cosmos-sdk/x/upgrade/types"
+	"github.com/adminoid/cosmos-sdk/x/upgrade/types"
 )
 
 type TestSuite struct {

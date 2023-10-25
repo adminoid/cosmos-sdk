@@ -3,7 +3,7 @@
  *
  * Copyright (c) 2015 Ian Coleman
  * Copyright (c) 2018 Ma_124, <github.com/Ma124>
- * Copyright (c) 2022 Cosmos SDK Developers, <github.com/cosmos/cosmos-sdk>
+ * Copyright (c) 2022 Cosmos SDK Developers, <github.com/adminoid/cosmos-sdk>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal

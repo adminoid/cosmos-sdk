@@ -13,13 +13,13 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
+	"github.com/adminoid/cosmos-sdk/store/iavl"
+	"github.com/adminoid/cosmos-sdk/store/metrics"
+	"github.com/adminoid/cosmos-sdk/store/rootmulti"
+	"github.com/adminoid/cosmos-sdk/store/snapshots"
+	snapshottypes "github.com/adminoid/cosmos-sdk/store/snapshots/types"
+	"github.com/adminoid/cosmos-sdk/store/types"
 	dbm "github.com/cosmos/cosmos-db"
-	"github.com/cosmos/cosmos-sdk/store/iavl"
-	"github.com/cosmos/cosmos-sdk/store/metrics"
-	"github.com/cosmos/cosmos-sdk/store/rootmulti"
-	"github.com/cosmos/cosmos-sdk/store/snapshots"
-	snapshottypes "github.com/cosmos/cosmos-sdk/store/snapshots/types"
-	"github.com/cosmos/cosmos-sdk/store/types"
 	"github.com/tendermint/tendermint/libs/log"
 )
 
@@ -226,7 +226,7 @@ func TestMultistoreSnapshotRestore(t *testing.T) {
 }
 
 func benchmarkMultistoreSnapshot(b *testing.B, stores uint8, storeKeys uint64) {
-	b.Skip("Noisy with slow setup time, please see https://github.com/cosmos/cosmos-sdk/issues/8855.")
+	b.Skip("Noisy with slow setup time, please see https://github.com/adminoid/cosmos-sdk/issues/8855.")
 
 	b.ReportAllocs()
 	b.StopTimer()
@@ -261,7 +261,7 @@ func benchmarkMultistoreSnapshot(b *testing.B, stores uint8, storeKeys uint64) {
 }
 
 func benchmarkMultistoreSnapshotRestore(b *testing.B, stores uint8, storeKeys uint64) {
-	b.Skip("Noisy with slow setup time, please see https://github.com/cosmos/cosmos-sdk/issues/8855.")
+	b.Skip("Noisy with slow setup time, please see https://github.com/adminoid/cosmos-sdk/issues/8855.")
 
 	b.ReportAllocs()
 	b.StopTimer()

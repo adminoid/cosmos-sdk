@@ -8,9 +8,9 @@ import (
 	json "encoding/json"
 	reflect "reflect"
 
-	codec "github.com/cosmos/cosmos-sdk/codec"
-	types "github.com/cosmos/cosmos-sdk/types"
-	exported "github.com/cosmos/cosmos-sdk/x/bank/exported"
+	codec "github.com/adminoid/cosmos-sdk/codec"
+	types "github.com/adminoid/cosmos-sdk/types"
+	exported "github.com/adminoid/cosmos-sdk/x/bank/exported"
 	gomock "github.com/golang/mock/gomock"
 	types0 "github.com/tendermint/tendermint/abci/types"
 )

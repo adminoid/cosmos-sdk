@@ -3,7 +3,7 @@ package baseapp
 import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/adminoid/cosmos-sdk/types"
 )
 
 // ParamStore defines the interface the parameter store used by the BaseApp must

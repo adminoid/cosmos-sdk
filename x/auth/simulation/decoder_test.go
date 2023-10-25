@@ -9,16 +9,16 @@ import (
 
 	"cosmossdk.io/depinject"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/kv"
-	"github.com/cosmos/cosmos-sdk/x/auth/simulation"
-	"github.com/cosmos/cosmos-sdk/x/auth/testutil"
+	"github.com/adminoid/cosmos-sdk/codec"
+	"github.com/adminoid/cosmos-sdk/crypto/keys/ed25519"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	"github.com/adminoid/cosmos-sdk/types/kv"
+	"github.com/adminoid/cosmos-sdk/x/auth/simulation"
+	"github.com/adminoid/cosmos-sdk/x/auth/testutil"
 
-	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
+	authkeeper "github.com/adminoid/cosmos-sdk/x/auth/keeper"
 
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/adminoid/cosmos-sdk/x/auth/types"
 )
 
 var (

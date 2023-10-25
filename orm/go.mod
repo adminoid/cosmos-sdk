@@ -1,4 +1,4 @@
-module github.com/cosmos/cosmos-sdk/orm
+module github.com/adminoid/cosmos-sdk/orm
 
 go 1.19
 

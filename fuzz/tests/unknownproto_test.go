@@ -5,8 +5,8 @@ package tests
 import (
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/codec/unknownproto"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
+	"github.com/adminoid/cosmos-sdk/codec/unknownproto"
+	"github.com/adminoid/cosmos-sdk/testutil/testdata"
 )
 
 func FuzzUnknownProto(f *testing.F) {

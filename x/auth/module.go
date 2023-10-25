@@ -15,19 +15,19 @@ import (
 
 	modulev1 "cosmossdk.io/api/cosmos/auth/module/v1"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	store "github.com/cosmos/cosmos-sdk/store/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/auth/client/cli"
-	"github.com/cosmos/cosmos-sdk/x/auth/exported"
-	"github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	"github.com/cosmos/cosmos-sdk/x/auth/simulation"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
+	"github.com/adminoid/cosmos-sdk/client"
+	"github.com/adminoid/cosmos-sdk/codec"
+	codectypes "github.com/adminoid/cosmos-sdk/codec/types"
+	store "github.com/adminoid/cosmos-sdk/store/types"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	"github.com/adminoid/cosmos-sdk/types/module"
+	simtypes "github.com/adminoid/cosmos-sdk/types/simulation"
+	"github.com/adminoid/cosmos-sdk/x/auth/client/cli"
+	"github.com/adminoid/cosmos-sdk/x/auth/exported"
+	"github.com/adminoid/cosmos-sdk/x/auth/keeper"
+	"github.com/adminoid/cosmos-sdk/x/auth/simulation"
+	"github.com/adminoid/cosmos-sdk/x/auth/types"
+	govtypes "github.com/adminoid/cosmos-sdk/x/gov/types"
 )
 
 // ConsensusVersion defines the current x/auth module consensus version.

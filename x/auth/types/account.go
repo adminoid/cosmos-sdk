@@ -9,9 +9,9 @@ import (
 
 	"github.com/tendermint/tendermint/crypto"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	codectypes "github.com/adminoid/cosmos-sdk/codec/types"
+	cryptotypes "github.com/adminoid/cosmos-sdk/crypto/types"
+	sdk "github.com/adminoid/cosmos-sdk/types"
 )
 
 var (

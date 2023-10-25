@@ -10,16 +10,16 @@ import (
 
 	"cosmossdk.io/math"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
-	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
-	stakingtestutil "github.com/cosmos/cosmos-sdk/x/staking/testutil"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/adminoid/cosmos-sdk/baseapp"
+	"github.com/adminoid/cosmos-sdk/testutil"
+	simtestutil "github.com/adminoid/cosmos-sdk/testutil/sims"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	moduletestutil "github.com/adminoid/cosmos-sdk/types/module/testutil"
+	authtypes "github.com/adminoid/cosmos-sdk/x/auth/types"
+	govtypes "github.com/adminoid/cosmos-sdk/x/gov/types"
+	stakingkeeper "github.com/adminoid/cosmos-sdk/x/staking/keeper"
+	stakingtestutil "github.com/adminoid/cosmos-sdk/x/staking/testutil"
+	stakingtypes "github.com/adminoid/cosmos-sdk/x/staking/types"
 )
 
 var (

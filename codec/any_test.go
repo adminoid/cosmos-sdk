@@ -5,12 +5,12 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	"github.com/cosmos/cosmos-sdk/types/module/testutil"
+	"github.com/adminoid/cosmos-sdk/codec"
+	codectypes "github.com/adminoid/cosmos-sdk/codec/types"
+	"github.com/adminoid/cosmos-sdk/crypto/keys/ed25519"
+	cryptotypes "github.com/adminoid/cosmos-sdk/crypto/types"
+	"github.com/adminoid/cosmos-sdk/testutil/testdata"
+	"github.com/adminoid/cosmos-sdk/types/module/testutil"
 )
 
 func NewTestInterfaceRegistry() codectypes.InterfaceRegistry {

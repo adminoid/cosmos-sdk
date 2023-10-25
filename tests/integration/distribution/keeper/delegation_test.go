@@ -7,17 +7,17 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	"gotest.tools/v3/assert"
 
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	bankkeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
-	banktestutil "github.com/cosmos/cosmos-sdk/x/bank/testutil"
-	"github.com/cosmos/cosmos-sdk/x/distribution/keeper"
-	"github.com/cosmos/cosmos-sdk/x/distribution/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking"
-	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
-	stakingtestutil "github.com/cosmos/cosmos-sdk/x/staking/testutil"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	simtestutil "github.com/adminoid/cosmos-sdk/testutil/sims"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	authkeeper "github.com/adminoid/cosmos-sdk/x/auth/keeper"
+	bankkeeper "github.com/adminoid/cosmos-sdk/x/bank/keeper"
+	banktestutil "github.com/adminoid/cosmos-sdk/x/bank/testutil"
+	"github.com/adminoid/cosmos-sdk/x/distribution/keeper"
+	"github.com/adminoid/cosmos-sdk/x/distribution/testutil"
+	"github.com/adminoid/cosmos-sdk/x/staking"
+	stakingkeeper "github.com/adminoid/cosmos-sdk/x/staking/keeper"
+	stakingtestutil "github.com/adminoid/cosmos-sdk/x/staking/testutil"
+	stakingtypes "github.com/adminoid/cosmos-sdk/x/staking/types"
 )
 
 func TestCalculateRewardsBasic(t *testing.T) {

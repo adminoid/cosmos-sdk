@@ -5,7 +5,7 @@ package tests
 import (
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/types"
+	"github.com/adminoid/cosmos-sdk/types"
 )
 
 func FuzzTypesVerifyAddressFormat(f *testing.F) {

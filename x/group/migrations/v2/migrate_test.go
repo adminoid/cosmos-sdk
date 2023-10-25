@@ -5,19 +5,19 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	storetypes "github.com/cosmos/cosmos-sdk/store/types"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/cosmos-sdk/x/group"
-	"github.com/cosmos/cosmos-sdk/x/group/internal/orm"
-	groupkeeper "github.com/cosmos/cosmos-sdk/x/group/keeper"
-	v2 "github.com/cosmos/cosmos-sdk/x/group/migrations/v2"
-	groupmodule "github.com/cosmos/cosmos-sdk/x/group/module"
+	"github.com/adminoid/cosmos-sdk/codec"
+	storetypes "github.com/adminoid/cosmos-sdk/store/types"
+	"github.com/adminoid/cosmos-sdk/testutil"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	moduletestutil "github.com/adminoid/cosmos-sdk/types/module/testutil"
+	"github.com/adminoid/cosmos-sdk/x/auth"
+	authkeeper "github.com/adminoid/cosmos-sdk/x/auth/keeper"
+	authtypes "github.com/adminoid/cosmos-sdk/x/auth/types"
+	"github.com/adminoid/cosmos-sdk/x/group"
+	"github.com/adminoid/cosmos-sdk/x/group/internal/orm"
+	groupkeeper "github.com/adminoid/cosmos-sdk/x/group/keeper"
+	v2 "github.com/adminoid/cosmos-sdk/x/group/migrations/v2"
+	groupmodule "github.com/adminoid/cosmos-sdk/x/group/module"
 )
 
 var (

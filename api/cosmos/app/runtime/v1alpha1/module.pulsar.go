@@ -1717,7 +1717,7 @@ type Module struct {
 	OverrideStoreKeys []*StoreKeyConfig `protobuf:"bytes,6,rep,name=override_store_keys,json=overrideStoreKeys,proto3" json:"override_store_keys,omitempty"`
 	// order_migrations defines the order in which module migrations are performed.
 	// If this is left empty, it uses the default migration order.
-	// https://pkg.go.dev/github.com/cosmos/cosmos-sdk@v0.47.0-alpha2/types/module#DefaultMigrationsOrder
+	// https://pkg.go.dev/github.com/adminoid/cosmos-sdk@v0.47.0-alpha2/types/module#DefaultMigrationsOrder
 	OrderMigrations []string `protobuf:"bytes,7,rep,name=order_migrations,json=orderMigrations,proto3" json:"order_migrations,omitempty"`
 }
 

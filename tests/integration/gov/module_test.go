@@ -6,12 +6,12 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	"gotest.tools/v3/assert"
 
-	"github.com/cosmos/cosmos-sdk/testutil/configurator"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
-	_ "github.com/cosmos/cosmos-sdk/x/mint"
+	"github.com/adminoid/cosmos-sdk/testutil/configurator"
+	simtestutil "github.com/adminoid/cosmos-sdk/testutil/sims"
+	authkeeper "github.com/adminoid/cosmos-sdk/x/auth/keeper"
+	authtypes "github.com/adminoid/cosmos-sdk/x/auth/types"
+	"github.com/adminoid/cosmos-sdk/x/gov/types"
+	_ "github.com/adminoid/cosmos-sdk/x/mint"
 )
 
 func TestItCreatesModuleAccountOnInitBlock(t *testing.T) {

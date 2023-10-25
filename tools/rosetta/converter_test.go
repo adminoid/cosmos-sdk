@@ -12,13 +12,13 @@ import (
 	"github.com/stretchr/testify/suite"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authsigning "github.com/cosmos/cosmos-sdk/x/auth/signing"
-	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
-	bank "github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/adminoid/cosmos-sdk/client"
+	"github.com/adminoid/cosmos-sdk/codec"
+	codectypes "github.com/adminoid/cosmos-sdk/codec/types"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	authsigning "github.com/adminoid/cosmos-sdk/x/auth/signing"
+	authtx "github.com/adminoid/cosmos-sdk/x/auth/tx"
+	bank "github.com/adminoid/cosmos-sdk/x/bank/types"
 )
 
 type ConverterTestSuite struct {

@@ -6,8 +6,8 @@ import (
 	"testing"
 
 	"cosmossdk.io/tools/confix/cmd"
-	"github.com/cosmos/cosmos-sdk/client"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
+	"github.com/adminoid/cosmos-sdk/client"
+	clitestutil "github.com/adminoid/cosmos-sdk/testutil/cli"
 	"gotest.tools/v3/assert"
 )
 

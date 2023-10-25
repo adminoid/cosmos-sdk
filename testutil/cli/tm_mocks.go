@@ -10,7 +10,7 @@ import (
 	coretypes "github.com/tendermint/tendermint/rpc/core/types"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/adminoid/cosmos-sdk/client"
 )
 
 var _ client.TendermintRPC = (*MockTendermintRPC)(nil)

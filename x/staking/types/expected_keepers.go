@@ -3,7 +3,7 @@ package types
 import (
 	"cosmossdk.io/math"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/adminoid/cosmos-sdk/types"
 )
 
 // DistributionKeeper expected distribution keeper (noalias)
@@ -20,7 +20,7 @@ type AccountKeeper interface {
 	GetModuleAddress(name string) sdk.AccAddress
 	GetModuleAccount(ctx sdk.Context, moduleName string) sdk.ModuleAccountI
 
-	// TODO remove with genesis 2-phases refactor https://github.com/cosmos/cosmos-sdk/issues/2862
+	// TODO remove with genesis 2-phases refactor https://github.com/adminoid/cosmos-sdk/issues/2862
 	SetModuleAccount(sdk.Context, sdk.ModuleAccountI)
 }
 

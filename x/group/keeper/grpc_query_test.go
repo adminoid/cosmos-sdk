@@ -4,24 +4,24 @@ import (
 	"context"
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/cosmos/cosmos-sdk/x/group"
-	groupkeeper "github.com/cosmos/cosmos-sdk/x/group/keeper"
-	"github.com/cosmos/cosmos-sdk/x/group/module"
+	"github.com/adminoid/cosmos-sdk/baseapp"
+	codectypes "github.com/adminoid/cosmos-sdk/codec/types"
+	simtestutil "github.com/adminoid/cosmos-sdk/testutil/sims"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	moduletestutil "github.com/adminoid/cosmos-sdk/types/module/testutil"
+	authtypes "github.com/adminoid/cosmos-sdk/x/auth/types"
+	banktypes "github.com/adminoid/cosmos-sdk/x/bank/types"
+	"github.com/adminoid/cosmos-sdk/x/group"
+	groupkeeper "github.com/adminoid/cosmos-sdk/x/group/keeper"
+	"github.com/adminoid/cosmos-sdk/x/group/module"
 	"github.com/golang/mock/gomock"
 	"github.com/tendermint/tendermint/libs/log"
 
-	grouptestutil "github.com/cosmos/cosmos-sdk/x/group/testutil"
+	grouptestutil "github.com/adminoid/cosmos-sdk/x/group/testutil"
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
+	"github.com/adminoid/cosmos-sdk/testutil"
 )
 
 func TestQueryGroupsByMember(t *testing.T) {

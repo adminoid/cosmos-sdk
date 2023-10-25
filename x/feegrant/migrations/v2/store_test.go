@@ -5,13 +5,13 @@ import (
 	"time"
 
 	"cosmossdk.io/depinject"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/feegrant"
-	v2 "github.com/cosmos/cosmos-sdk/x/feegrant/migrations/v2"
-	feegranttestutil "github.com/cosmos/cosmos-sdk/x/feegrant/testutil"
+	"github.com/adminoid/cosmos-sdk/codec"
+	"github.com/adminoid/cosmos-sdk/crypto/keys/ed25519"
+	"github.com/adminoid/cosmos-sdk/testutil"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	"github.com/adminoid/cosmos-sdk/x/feegrant"
+	v2 "github.com/adminoid/cosmos-sdk/x/feegrant/migrations/v2"
+	feegranttestutil "github.com/adminoid/cosmos-sdk/x/feegrant/testutil"
 	"github.com/stretchr/testify/require"
 )
 

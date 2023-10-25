@@ -9,11 +9,11 @@ import (
 	dbm "github.com/cosmos/cosmos-db"
 	"github.com/tendermint/tendermint/libs/math"
 
-	"github.com/cosmos/cosmos-sdk/store/cachekv/internal"
-	"github.com/cosmos/cosmos-sdk/store/internal/conv"
-	"github.com/cosmos/cosmos-sdk/store/internal/kv"
-	"github.com/cosmos/cosmos-sdk/store/tracekv"
-	"github.com/cosmos/cosmos-sdk/store/types"
+	"github.com/adminoid/cosmos-sdk/store/cachekv/internal"
+	"github.com/adminoid/cosmos-sdk/store/internal/conv"
+	"github.com/adminoid/cosmos-sdk/store/internal/kv"
+	"github.com/adminoid/cosmos-sdk/store/tracekv"
+	"github.com/adminoid/cosmos-sdk/store/types"
 )
 
 // cValue represents a cached value.

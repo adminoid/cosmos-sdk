@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"cosmossdk.io/tools/confix"
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/adminoid/cosmos-sdk/client"
 	"github.com/spf13/cobra"
 	"golang.org/x/exp/maps"
 )

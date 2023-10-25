@@ -7,10 +7,10 @@ import (
 	dbm "github.com/cosmos/cosmos-db"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/cosmos/cosmos-sdk/store/internal/kv"
-	"github.com/cosmos/cosmos-sdk/store/metrics"
-	pruningtypes "github.com/cosmos/cosmos-sdk/store/pruning/types"
-	snapshottypes "github.com/cosmos/cosmos-sdk/store/snapshots/types"
+	"github.com/adminoid/cosmos-sdk/store/internal/kv"
+	"github.com/adminoid/cosmos-sdk/store/metrics"
+	pruningtypes "github.com/adminoid/cosmos-sdk/store/pruning/types"
+	snapshottypes "github.com/adminoid/cosmos-sdk/store/snapshots/types"
 )
 
 type Store interface {

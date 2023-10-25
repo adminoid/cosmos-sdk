@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/cosmos/cosmos-sdk/x/nft"
+	"github.com/adminoid/cosmos-sdk/x/nft"
 )
 
 func (s *TestSuite) TestBatchMint() {

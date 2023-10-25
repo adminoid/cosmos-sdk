@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/adminoid/cosmos-sdk/types"
 )
 
 // Periods stores all vesting periods passed as part of a PeriodicVestingAccount

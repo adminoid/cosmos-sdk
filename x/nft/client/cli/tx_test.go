@@ -11,20 +11,20 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	rpcclientmock "github.com/tendermint/tendermint/rpc/client/mock"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	testutilmod "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/nft"
-	nftmodule "github.com/cosmos/cosmos-sdk/x/nft/module"
+	"github.com/adminoid/cosmos-sdk/client"
+	"github.com/adminoid/cosmos-sdk/client/flags"
+	"github.com/adminoid/cosmos-sdk/crypto/keyring"
+	svrcmd "github.com/adminoid/cosmos-sdk/server/cmd"
+	"github.com/adminoid/cosmos-sdk/testutil"
+	clitestutil "github.com/adminoid/cosmos-sdk/testutil/cli"
+	"github.com/adminoid/cosmos-sdk/testutil/network"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	testutilmod "github.com/adminoid/cosmos-sdk/types/module/testutil"
+	"github.com/adminoid/cosmos-sdk/x/nft"
+	nftmodule "github.com/adminoid/cosmos-sdk/x/nft/module"
 
-	"github.com/cosmos/cosmos-sdk/x/nft/client/cli"
-	nfttestutil "github.com/cosmos/cosmos-sdk/x/nft/testutil"
+	"github.com/adminoid/cosmos-sdk/x/nft/client/cli"
+	nfttestutil "github.com/adminoid/cosmos-sdk/x/nft/testutil"
 )
 
 const (

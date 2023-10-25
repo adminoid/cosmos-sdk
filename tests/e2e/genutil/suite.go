@@ -8,15 +8,15 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
-	stakingcli "github.com/cosmos/cosmos-sdk/x/staking/client/cli"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/adminoid/cosmos-sdk/client/flags"
+	clitestutil "github.com/adminoid/cosmos-sdk/testutil/cli"
+	"github.com/adminoid/cosmos-sdk/testutil/network"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	"github.com/adminoid/cosmos-sdk/types/module"
+	banktypes "github.com/adminoid/cosmos-sdk/x/bank/types"
+	"github.com/adminoid/cosmos-sdk/x/genutil/client/cli"
+	stakingcli "github.com/adminoid/cosmos-sdk/x/staking/client/cli"
+	"github.com/adminoid/cosmos-sdk/x/staking/types"
 )
 
 type E2ETestSuite struct {

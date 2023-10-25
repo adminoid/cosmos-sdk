@@ -17,9 +17,9 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 
 	sdkerrors "cosmossdk.io/errors"
-	"github.com/cosmos/cosmos-sdk/store/snapshots"
-	snapshottypes "github.com/cosmos/cosmos-sdk/store/snapshots/types"
-	"github.com/cosmos/cosmos-sdk/store/types"
+	"github.com/adminoid/cosmos-sdk/store/snapshots"
+	snapshottypes "github.com/adminoid/cosmos-sdk/store/snapshots/types"
+	"github.com/adminoid/cosmos-sdk/store/types"
 )
 
 func checksums(slice [][]byte) [][]byte {
@@ -283,8 +283,8 @@ func (s *extSnapshotter) RestoreExtension(height uint64, format uint32, payloadR
 func GetTempDir(t testing.TB) string {
 	t.Helper()
 	// os.MkDir() is used instead of testing.T.TempDir()
-	// see https://github.com/cosmos/cosmos-sdk/pull/8475 and
-	// https://github.com/cosmos/cosmos-sdk/pull/10341 for
+	// see https://github.com/adminoid/cosmos-sdk/pull/8475 and
+	// https://github.com/adminoid/cosmos-sdk/pull/10341 for
 	// this change's rationale.
 	tempdir, err := os.MkdirTemp("", "")
 	require.NoError(t, err)

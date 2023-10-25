@@ -3,7 +3,7 @@ module cosmossdk.io/tools/confix
 go 1.19
 
 require (
-	github.com/cosmos/cosmos-sdk v0.47.5-evmos
+	github.com/adminoid/cosmos-sdk v0.47.5-evmos
 	github.com/creachadair/atomicfile v0.2.7
 	github.com/creachadair/tomledit v0.0.24
 	github.com/spf13/cobra v1.6.1
@@ -139,6 +139,6 @@ require (
 )
 
 // Fix upstream GHSA-h395-qcrw-5vmq vulnerability.
-// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
+// TODO Remove it: https://github.com/adminoid/cosmos-sdk/issues/10409
 // TODO investigate if we can outright delete this dependency, otherwise go install won't work :(
 replace github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.8.1

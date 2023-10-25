@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"cosmossdk.io/tools/cosmovisor"
-	"github.com/cosmos/cosmos-sdk/testutil"
+	"github.com/adminoid/cosmos-sdk/testutil"
 	"github.com/stretchr/testify/require"
 )
 

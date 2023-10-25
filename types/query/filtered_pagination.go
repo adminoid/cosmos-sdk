@@ -3,8 +3,8 @@ package query
 import (
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/store/types"
+	"github.com/adminoid/cosmos-sdk/codec"
+	"github.com/adminoid/cosmos-sdk/store/types"
 	proto "github.com/cosmos/gogoproto/proto"
 )
 

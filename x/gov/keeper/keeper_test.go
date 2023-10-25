@@ -6,16 +6,16 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/codec"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/gov/keeper"
-	govtestutil "github.com/cosmos/cosmos-sdk/x/gov/testutil"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
-	"github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
-	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
+	"github.com/adminoid/cosmos-sdk/baseapp"
+	"github.com/adminoid/cosmos-sdk/codec"
+	simtestutil "github.com/adminoid/cosmos-sdk/testutil/sims"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	"github.com/adminoid/cosmos-sdk/x/gov/keeper"
+	govtestutil "github.com/adminoid/cosmos-sdk/x/gov/testutil"
+	"github.com/adminoid/cosmos-sdk/x/gov/types"
+	v1 "github.com/adminoid/cosmos-sdk/x/gov/types/v1"
+	"github.com/adminoid/cosmos-sdk/x/gov/types/v1beta1"
+	minttypes "github.com/adminoid/cosmos-sdk/x/mint/types"
 )
 
 type KeeperTestSuite struct {

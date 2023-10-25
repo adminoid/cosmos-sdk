@@ -6,11 +6,11 @@ import (
 	"github.com/stretchr/testify/require"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	authKeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/cosmos-sdk/x/staking/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	simtestutil "github.com/adminoid/cosmos-sdk/testutil/sims"
+	authKeeper "github.com/adminoid/cosmos-sdk/x/auth/keeper"
+	authtypes "github.com/adminoid/cosmos-sdk/x/auth/types"
+	"github.com/adminoid/cosmos-sdk/x/staking/testutil"
+	"github.com/adminoid/cosmos-sdk/x/staking/types"
 )
 
 func TestItCreatesModuleAccountOnInitBlock(t *testing.T) {

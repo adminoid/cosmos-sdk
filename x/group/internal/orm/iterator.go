@@ -6,9 +6,9 @@ import (
 
 	"github.com/cosmos/gogoproto/proto"
 
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/x/group/errors"
+	sdkerrors "github.com/adminoid/cosmos-sdk/types/errors"
+	"github.com/adminoid/cosmos-sdk/types/query"
+	"github.com/adminoid/cosmos-sdk/x/group/errors"
 )
 
 // defaultPageLimit is the default limit value for pagination requests.

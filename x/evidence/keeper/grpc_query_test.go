@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/x/evidence/exported"
-	"github.com/cosmos/cosmos-sdk/x/evidence/types"
+	"github.com/adminoid/cosmos-sdk/types/query"
+	"github.com/adminoid/cosmos-sdk/x/evidence/exported"
+	"github.com/adminoid/cosmos-sdk/x/evidence/types"
 )
 
 func (suite *KeeperTestSuite) TestQueryEvidence() {

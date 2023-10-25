@@ -8,8 +8,8 @@ import (
 	tmmerkle "github.com/tendermint/tendermint/proto/tendermint/crypto"
 
 	sdkerrors "cosmossdk.io/errors"
-	sdkmaps "github.com/cosmos/cosmos-sdk/store/internal/maps"
-	sdkproofs "github.com/cosmos/cosmos-sdk/store/internal/proofs"
+	sdkmaps "github.com/adminoid/cosmos-sdk/store/internal/maps"
+	sdkproofs "github.com/adminoid/cosmos-sdk/store/internal/proofs"
 )
 
 const (

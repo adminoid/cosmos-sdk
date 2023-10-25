@@ -10,7 +10,7 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
 	"cosmossdk.io/simapp"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
+	"github.com/adminoid/cosmos-sdk/testutil/network"
 )
 
 func TestE2ETestSuite(t *testing.T) {

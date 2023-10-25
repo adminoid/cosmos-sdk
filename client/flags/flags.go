@@ -8,7 +8,7 @@ import (
 	"github.com/spf13/pflag"
 	tmcli "github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
+	"github.com/adminoid/cosmos-sdk/crypto/keyring"
 )
 
 const (

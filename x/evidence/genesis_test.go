@@ -9,14 +9,14 @@ import (
 	"github.com/stretchr/testify/suite"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/evidence"
-	"github.com/cosmos/cosmos-sdk/x/evidence/exported"
-	"github.com/cosmos/cosmos-sdk/x/evidence/keeper"
-	"github.com/cosmos/cosmos-sdk/x/evidence/testutil"
-	"github.com/cosmos/cosmos-sdk/x/evidence/types"
+	"github.com/adminoid/cosmos-sdk/crypto/keys/ed25519"
+	simtestutil "github.com/adminoid/cosmos-sdk/testutil/sims"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	"github.com/adminoid/cosmos-sdk/x/evidence"
+	"github.com/adminoid/cosmos-sdk/x/evidence/exported"
+	"github.com/adminoid/cosmos-sdk/x/evidence/keeper"
+	"github.com/adminoid/cosmos-sdk/x/evidence/testutil"
+	"github.com/adminoid/cosmos-sdk/x/evidence/types"
 )
 
 type GenesisTestSuite struct {

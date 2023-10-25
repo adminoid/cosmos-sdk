@@ -2,19 +2,19 @@ package v2
 
 import (
 	"cosmossdk.io/math"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/store/prefix"
-	storetypes "github.com/cosmos/cosmos-sdk/store/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	v1auth "github.com/cosmos/cosmos-sdk/x/auth/migrations/v1"
-	v1 "github.com/cosmos/cosmos-sdk/x/bank/migrations/v1"
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/adminoid/cosmos-sdk/codec"
+	"github.com/adminoid/cosmos-sdk/store/prefix"
+	storetypes "github.com/adminoid/cosmos-sdk/store/types"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	v1auth "github.com/adminoid/cosmos-sdk/x/auth/migrations/v1"
+	v1 "github.com/adminoid/cosmos-sdk/x/bank/migrations/v1"
+	"github.com/adminoid/cosmos-sdk/x/bank/types"
 	"github.com/tendermint/tendermint/libs/log"
 )
 
 // migrateSupply migrates the supply to be stored by denom key instead in a
 // single blob.
-// ref: https://github.com/cosmos/cosmos-sdk/issues/7092
+// ref: https://github.com/adminoid/cosmos-sdk/issues/7092
 func migrateSupply(store sdk.KVStore, cdc codec.BinaryCodec) error {
 	// Old supply was stored as a single blob under the SupplyKey.
 	var oldSupplyI v1.SupplyI
@@ -78,7 +78,7 @@ func migrateBalanceKeys(store sdk.KVStore, logger log.Logger) {
 // - Change addresses to be length-prefixed.
 // - Change balances prefix to 1 byte
 // - Change supply to be indexed by denom
-// - Prune balances & supply with zero coins (ref: https://github.com/cosmos/cosmos-sdk/pull/9229)
+// - Prune balances & supply with zero coins (ref: https://github.com/adminoid/cosmos-sdk/pull/9229)
 func MigrateStore(ctx sdk.Context, storeKey storetypes.StoreKey, cdc codec.BinaryCodec) error {
 	store := ctx.KVStore(storeKey)
 	migrateBalanceKeys(store, ctx.Logger())

@@ -10,15 +10,15 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 
 	"cosmossdk.io/simapp"
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/server"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	genutiltest "github.com/cosmos/cosmos-sdk/x/genutil/client/testutil"
-	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
-	"github.com/cosmos/cosmos-sdk/x/staking"
+	"github.com/adminoid/cosmos-sdk/client"
+	"github.com/adminoid/cosmos-sdk/client/flags"
+	"github.com/adminoid/cosmos-sdk/server"
+	moduletestutil "github.com/adminoid/cosmos-sdk/types/module/testutil"
+	"github.com/adminoid/cosmos-sdk/x/auth"
+	banktypes "github.com/adminoid/cosmos-sdk/x/bank/types"
+	genutiltest "github.com/adminoid/cosmos-sdk/x/genutil/client/testutil"
+	genutiltypes "github.com/adminoid/cosmos-sdk/x/genutil/types"
+	"github.com/adminoid/cosmos-sdk/x/staking"
 )
 
 func Test_TestnetCmd(t *testing.T) {

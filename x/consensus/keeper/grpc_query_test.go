@@ -4,7 +4,7 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/x/consensus/types"
+	"github.com/adminoid/cosmos-sdk/x/consensus/types"
 )
 
 func (s *KeeperTestSuite) TestGRPCQueryConsensusParams() {

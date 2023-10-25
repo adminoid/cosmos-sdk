@@ -1,26 +1,26 @@
 package testutil
 
 import (
-	_ "github.com/cosmos/cosmos-sdk/x/auth"            // import as blank for app wiring
-	_ "github.com/cosmos/cosmos-sdk/x/auth/tx/config"  // import as blank for app wiring
-	_ "github.com/cosmos/cosmos-sdk/x/auth/vesting"    // import as blank for app wiring
-	_ "github.com/cosmos/cosmos-sdk/x/bank"            // import as blank for app wiring
-	_ "github.com/cosmos/cosmos-sdk/x/consensus"       // import as blank for app wiring
-	_ "github.com/cosmos/cosmos-sdk/x/feegrant/module" // import as blank for app wiring
-	_ "github.com/cosmos/cosmos-sdk/x/genutil"         // import as blank for app wiring
-	_ "github.com/cosmos/cosmos-sdk/x/params"          // import as blank for app wiring
-	_ "github.com/cosmos/cosmos-sdk/x/staking"         // import as blank for app wiring
+	_ "github.com/adminoid/cosmos-sdk/x/auth"            // import as blank for app wiring
+	_ "github.com/adminoid/cosmos-sdk/x/auth/tx/config"  // import as blank for app wiring
+	_ "github.com/adminoid/cosmos-sdk/x/auth/vesting"    // import as blank for app wiring
+	_ "github.com/adminoid/cosmos-sdk/x/bank"            // import as blank for app wiring
+	_ "github.com/adminoid/cosmos-sdk/x/consensus"       // import as blank for app wiring
+	_ "github.com/adminoid/cosmos-sdk/x/feegrant/module" // import as blank for app wiring
+	_ "github.com/adminoid/cosmos-sdk/x/genutil"         // import as blank for app wiring
+	_ "github.com/adminoid/cosmos-sdk/x/params"          // import as blank for app wiring
+	_ "github.com/adminoid/cosmos-sdk/x/staking"         // import as blank for app wiring
 
 	"cosmossdk.io/core/appconfig"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	vestingtypes "github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	consensustypes "github.com/cosmos/cosmos-sdk/x/consensus/types"
-	"github.com/cosmos/cosmos-sdk/x/feegrant"
-	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
-	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
-	paramstypes "github.com/cosmos/cosmos-sdk/x/params/types"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	authtypes "github.com/adminoid/cosmos-sdk/x/auth/types"
+	vestingtypes "github.com/adminoid/cosmos-sdk/x/auth/vesting/types"
+	banktypes "github.com/adminoid/cosmos-sdk/x/bank/types"
+	consensustypes "github.com/adminoid/cosmos-sdk/x/consensus/types"
+	"github.com/adminoid/cosmos-sdk/x/feegrant"
+	genutiltypes "github.com/adminoid/cosmos-sdk/x/genutil/types"
+	minttypes "github.com/adminoid/cosmos-sdk/x/mint/types"
+	paramstypes "github.com/adminoid/cosmos-sdk/x/params/types"
+	stakingtypes "github.com/adminoid/cosmos-sdk/x/staking/types"
 
 	runtimev1alpha1 "cosmossdk.io/api/cosmos/app/runtime/v1alpha1"
 	appv1alpha1 "cosmossdk.io/api/cosmos/app/v1alpha1"

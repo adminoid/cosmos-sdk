@@ -161,7 +161,7 @@ func getKind(fd protoreflect.FieldDescriptor) string {
 }
 
 // toSentenceCase formats a field name in sentence case, as specified in:
-// https://github.com/cosmos/cosmos-sdk/blob/b6f867d0b674d62e56b27aa4d00f5b6042ebac9e/docs/architecture/adr-050-sign-mode-textual-annex1.md?plain=1#L110
+// https://github.com/adminoid/cosmos-sdk/blob/b6f867d0b674d62e56b27aa4d00f5b6042ebac9e/docs/architecture/adr-050-sign-mode-textual-annex1.md?plain=1#L110
 func toSentenceCase(name string) string {
 	if len(name) == 0 {
 		return name

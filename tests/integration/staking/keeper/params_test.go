@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"cosmossdk.io/simapp"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/adminoid/cosmos-sdk/x/staking/types"
 	"github.com/stretchr/testify/require"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 )

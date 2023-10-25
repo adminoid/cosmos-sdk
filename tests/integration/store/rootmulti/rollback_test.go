@@ -11,7 +11,7 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	"gotest.tools/v3/assert"
 
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
+	simtestutil "github.com/adminoid/cosmos-sdk/testutil/sims"
 )
 
 func TestRollback(t *testing.T) {

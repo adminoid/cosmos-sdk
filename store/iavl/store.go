@@ -13,12 +13,12 @@ import (
 	tmcrypto "github.com/tendermint/tendermint/proto/tendermint/crypto"
 
 	sdkerrors "cosmossdk.io/errors"
-	"github.com/cosmos/cosmos-sdk/store/cachekv"
-	"github.com/cosmos/cosmos-sdk/store/internal/kv"
-	"github.com/cosmos/cosmos-sdk/store/metrics"
-	pruningtypes "github.com/cosmos/cosmos-sdk/store/pruning/types"
-	"github.com/cosmos/cosmos-sdk/store/tracekv"
-	"github.com/cosmos/cosmos-sdk/store/types"
+	"github.com/adminoid/cosmos-sdk/store/cachekv"
+	"github.com/adminoid/cosmos-sdk/store/internal/kv"
+	"github.com/adminoid/cosmos-sdk/store/metrics"
+	pruningtypes "github.com/adminoid/cosmos-sdk/store/pruning/types"
+	"github.com/adminoid/cosmos-sdk/store/tracekv"
+	"github.com/adminoid/cosmos-sdk/store/types"
 )
 
 const (

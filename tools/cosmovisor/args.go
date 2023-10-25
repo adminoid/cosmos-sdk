@@ -11,8 +11,8 @@ import (
 	"time"
 
 	cverrors "cosmossdk.io/tools/cosmovisor/errors"
-	upgradekeeper "github.com/cosmos/cosmos-sdk/x/upgrade/keeper"
-	upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"
+	upgradekeeper "github.com/adminoid/cosmos-sdk/x/upgrade/keeper"
+	upgradetypes "github.com/adminoid/cosmos-sdk/x/upgrade/types"
 	"github.com/rs/zerolog"
 )
 

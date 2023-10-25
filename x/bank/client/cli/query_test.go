@@ -9,14 +9,14 @@ import (
 	"github.com/cosmos/gogoproto/proto"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/bank/client/cli"
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/adminoid/cosmos-sdk/client"
+	"github.com/adminoid/cosmos-sdk/client/flags"
+	svrcmd "github.com/adminoid/cosmos-sdk/server/cmd"
+	"github.com/adminoid/cosmos-sdk/testutil"
+	clitestutil "github.com/adminoid/cosmos-sdk/testutil/cli"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	"github.com/adminoid/cosmos-sdk/x/bank/client/cli"
+	"github.com/adminoid/cosmos-sdk/x/bank/types"
 )
 
 func (s *CLITestSuite) TestGetBalancesCmd() {

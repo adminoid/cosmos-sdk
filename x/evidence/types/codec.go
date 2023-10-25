@@ -1,16 +1,16 @@
 package types
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/legacy"
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/msgservice"
-	authzcodec "github.com/cosmos/cosmos-sdk/x/authz/codec"
-	"github.com/cosmos/cosmos-sdk/x/evidence/exported"
-	govcodec "github.com/cosmos/cosmos-sdk/x/gov/codec"
-	groupcodec "github.com/cosmos/cosmos-sdk/x/group/codec"
+	"github.com/adminoid/cosmos-sdk/codec"
+	"github.com/adminoid/cosmos-sdk/codec/legacy"
+	"github.com/adminoid/cosmos-sdk/codec/types"
+	cryptocodec "github.com/adminoid/cosmos-sdk/crypto/codec"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	"github.com/adminoid/cosmos-sdk/types/msgservice"
+	authzcodec "github.com/adminoid/cosmos-sdk/x/authz/codec"
+	"github.com/adminoid/cosmos-sdk/x/evidence/exported"
+	govcodec "github.com/adminoid/cosmos-sdk/x/gov/codec"
+	groupcodec "github.com/adminoid/cosmos-sdk/x/group/codec"
 )
 
 // RegisterLegacyAminoCodec registers all the necessary types and interfaces for the

@@ -3,14 +3,14 @@ package authz
 import (
 	"time"
 
-	authzcodec "github.com/cosmos/cosmos-sdk/x/authz/codec"
+	authzcodec "github.com/adminoid/cosmos-sdk/x/authz/codec"
 
 	"github.com/cosmos/gogoproto/proto"
 
-	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/x/auth/migrations/legacytx"
+	cdctypes "github.com/adminoid/cosmos-sdk/codec/types"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	sdkerrors "github.com/adminoid/cosmos-sdk/types/errors"
+	"github.com/adminoid/cosmos-sdk/x/auth/migrations/legacytx"
 )
 
 var (

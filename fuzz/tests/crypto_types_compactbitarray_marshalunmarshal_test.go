@@ -5,7 +5,7 @@ package tests
 import (
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/crypto/types"
+	"github.com/adminoid/cosmos-sdk/crypto/types"
 )
 
 func FuzzCryptoTypesCompactbitarrayMarshalUnmarshal(f *testing.F) {

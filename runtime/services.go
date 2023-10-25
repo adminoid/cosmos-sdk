@@ -5,8 +5,8 @@ import (
 	autocliv1 "cosmossdk.io/api/cosmos/autocli/v1"
 	reflectionv1 "cosmossdk.io/api/cosmos/reflection/v1"
 
-	"github.com/cosmos/cosmos-sdk/runtime/services"
-	"github.com/cosmos/cosmos-sdk/types/module"
+	"github.com/adminoid/cosmos-sdk/runtime/services"
+	"github.com/adminoid/cosmos-sdk/types/module"
 )
 
 func (a *App) registerRuntimeServices(cfg module.Configurator) error {

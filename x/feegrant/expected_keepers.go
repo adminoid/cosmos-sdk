@@ -1,7 +1,7 @@
 package feegrant
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/adminoid/cosmos-sdk/types"
 )
 
 // AccountKeeper defines the expected auth Account Keeper (noalias)

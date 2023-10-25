@@ -10,13 +10,13 @@ import (
 
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/server"
-	"github.com/cosmos/cosmos-sdk/types"
-	bankexported "github.com/cosmos/cosmos-sdk/x/bank/exported"
-	"github.com/cosmos/cosmos-sdk/x/genutil"
-	gtypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/adminoid/cosmos-sdk/codec"
+	cdctypes "github.com/adminoid/cosmos-sdk/codec/types"
+	"github.com/adminoid/cosmos-sdk/server"
+	"github.com/adminoid/cosmos-sdk/types"
+	bankexported "github.com/adminoid/cosmos-sdk/x/bank/exported"
+	"github.com/adminoid/cosmos-sdk/x/genutil"
+	gtypes "github.com/adminoid/cosmos-sdk/x/genutil/types"
 )
 
 type doNothingUnmarshalJSON struct {
@@ -35,7 +35,7 @@ func (dni *doNothingIterator) IterateGenesisBalances(_ codec.JSONCodec, _ map[st
 }
 
 // Ensures that CollectTx correctly traverses directories and won't error out on encountering
-// a directory during traversal of the first level. See issue https://github.com/cosmos/cosmos-sdk/issues/6788.
+// a directory during traversal of the first level. See issue https://github.com/adminoid/cosmos-sdk/issues/6788.
 func TestCollectTxsHandlesDirectories(t *testing.T) {
 	testDir, err := os.MkdirTemp(os.TempDir(), "testCollectTxs")
 	if err != nil {

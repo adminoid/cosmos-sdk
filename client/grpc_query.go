@@ -10,17 +10,17 @@ import (
 	proto "github.com/cosmos/gogoproto/proto"
 	"google.golang.org/grpc/encoding"
 
-	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/adminoid/cosmos-sdk/codec"
 
 	gogogrpc "github.com/cosmos/gogoproto/grpc"
 	abci "github.com/tendermint/tendermint/abci/types"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	grpctypes "github.com/cosmos/cosmos-sdk/types/grpc"
-	"github.com/cosmos/cosmos-sdk/types/tx"
+	"github.com/adminoid/cosmos-sdk/codec/types"
+	sdkerrors "github.com/adminoid/cosmos-sdk/types/errors"
+	grpctypes "github.com/adminoid/cosmos-sdk/types/grpc"
+	"github.com/adminoid/cosmos-sdk/types/tx"
 )
 
 var _ gogogrpc.ClientConn = Context{}

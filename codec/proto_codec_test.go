@@ -11,10 +11,10 @@ import (
 	"google.golang.org/grpc/encoding"
 	"google.golang.org/grpc/status"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/adminoid/cosmos-sdk/codec"
+	"github.com/adminoid/cosmos-sdk/codec/types"
+	"github.com/adminoid/cosmos-sdk/testutil/testdata"
+	banktypes "github.com/adminoid/cosmos-sdk/x/bank/types"
 )
 
 func createTestInterfaceRegistry() types.InterfaceRegistry {

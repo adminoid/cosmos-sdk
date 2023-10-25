@@ -6,10 +6,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/tendermint/tendermint/libs/log"
 
-	serverTypes "github.com/cosmos/cosmos-sdk/server/types"
-	"github.com/cosmos/cosmos-sdk/store/streaming"
-	"github.com/cosmos/cosmos-sdk/store/streaming/file"
-	"github.com/cosmos/cosmos-sdk/store/types"
+	serverTypes "github.com/adminoid/cosmos-sdk/server/types"
+	"github.com/adminoid/cosmos-sdk/store/streaming"
+	"github.com/adminoid/cosmos-sdk/store/streaming/file"
+	"github.com/adminoid/cosmos-sdk/store/types"
 )
 
 type fakeOptions struct{}

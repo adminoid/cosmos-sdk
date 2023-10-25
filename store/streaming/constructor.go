@@ -7,10 +7,10 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	serverTypes "github.com/cosmos/cosmos-sdk/server/types"
-	"github.com/cosmos/cosmos-sdk/store/streaming/file"
-	"github.com/cosmos/cosmos-sdk/store/types"
+	"github.com/adminoid/cosmos-sdk/client/flags"
+	serverTypes "github.com/adminoid/cosmos-sdk/server/types"
+	"github.com/adminoid/cosmos-sdk/store/streaming/file"
+	"github.com/adminoid/cosmos-sdk/store/types"
 	"github.com/tendermint/tendermint/libs/log"
 
 	"github.com/spf13/cast"

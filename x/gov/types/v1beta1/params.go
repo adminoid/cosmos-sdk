@@ -3,7 +3,7 @@ package v1beta1
 import (
 	"time"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/adminoid/cosmos-sdk/types"
 )
 
 // Default period for deposits & voting

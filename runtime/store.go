@@ -5,8 +5,8 @@ import (
 
 	"cosmossdk.io/core/store"
 
-	storetypes "github.com/cosmos/cosmos-sdk/store/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	storetypes "github.com/adminoid/cosmos-sdk/store/types"
+	sdk "github.com/adminoid/cosmos-sdk/types"
 )
 
 type kvStoreService struct {

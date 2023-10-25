@@ -19,16 +19,16 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/server/api"
-	serverconfig "github.com/cosmos/cosmos-sdk/server/config"
-	servergrpc "github.com/cosmos/cosmos-sdk/server/grpc"
-	"github.com/cosmos/cosmos-sdk/server/types"
-	pruningtypes "github.com/cosmos/cosmos-sdk/store/pruning/types"
-	"github.com/cosmos/cosmos-sdk/telemetry"
-	"github.com/cosmos/cosmos-sdk/types/mempool"
+	"github.com/adminoid/cosmos-sdk/client"
+	"github.com/adminoid/cosmos-sdk/client/flags"
+	"github.com/adminoid/cosmos-sdk/codec"
+	"github.com/adminoid/cosmos-sdk/server/api"
+	serverconfig "github.com/adminoid/cosmos-sdk/server/config"
+	servergrpc "github.com/adminoid/cosmos-sdk/server/grpc"
+	"github.com/adminoid/cosmos-sdk/server/types"
+	pruningtypes "github.com/adminoid/cosmos-sdk/store/pruning/types"
+	"github.com/adminoid/cosmos-sdk/telemetry"
+	"github.com/adminoid/cosmos-sdk/types/mempool"
 )
 
 const (

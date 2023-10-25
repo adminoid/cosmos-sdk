@@ -1,10 +1,10 @@
 package v2
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/mint/exported"
-	"github.com/cosmos/cosmos-sdk/x/mint/types"
+	"github.com/adminoid/cosmos-sdk/codec"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	"github.com/adminoid/cosmos-sdk/x/mint/exported"
+	"github.com/adminoid/cosmos-sdk/x/mint/types"
 )
 
 const (

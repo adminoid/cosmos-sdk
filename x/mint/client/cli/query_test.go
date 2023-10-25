@@ -10,15 +10,15 @@ import (
 	"github.com/stretchr/testify/require"
 	rpcclientmock "github.com/tendermint/tendermint/rpc/client/mock"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
+	"github.com/adminoid/cosmos-sdk/client"
+	"github.com/adminoid/cosmos-sdk/client/flags"
+	svrcmd "github.com/adminoid/cosmos-sdk/server/cmd"
+	clitestutil "github.com/adminoid/cosmos-sdk/testutil/cli"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	testutilmod "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/mint"
-	mintcli "github.com/cosmos/cosmos-sdk/x/mint/client/cli"
+	"github.com/adminoid/cosmos-sdk/crypto/keyring"
+	testutilmod "github.com/adminoid/cosmos-sdk/types/module/testutil"
+	"github.com/adminoid/cosmos-sdk/x/mint"
+	mintcli "github.com/adminoid/cosmos-sdk/x/mint/client/cli"
 )
 
 func TestGetCmdQueryParams(t *testing.T) {

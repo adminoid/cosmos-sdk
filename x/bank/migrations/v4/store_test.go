@@ -3,13 +3,13 @@ package v4_test
 import (
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/bank"
-	"github.com/cosmos/cosmos-sdk/x/bank/exported"
-	v4 "github.com/cosmos/cosmos-sdk/x/bank/migrations/v4"
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/adminoid/cosmos-sdk/testutil"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	moduletestutil "github.com/adminoid/cosmos-sdk/types/module/testutil"
+	"github.com/adminoid/cosmos-sdk/x/bank"
+	"github.com/adminoid/cosmos-sdk/x/bank/exported"
+	v4 "github.com/adminoid/cosmos-sdk/x/bank/migrations/v4"
+	"github.com/adminoid/cosmos-sdk/x/bank/types"
 	"github.com/stretchr/testify/require"
 )
 

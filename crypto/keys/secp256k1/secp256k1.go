@@ -12,9 +12,9 @@ import (
 	"github.com/tendermint/tendermint/crypto"
 	"golang.org/x/crypto/ripemd160" //nolint: staticcheck
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/adminoid/cosmos-sdk/codec"
+	cryptotypes "github.com/adminoid/cosmos-sdk/crypto/types"
+	"github.com/adminoid/cosmos-sdk/types/errors"
 )
 
 var (

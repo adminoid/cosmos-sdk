@@ -19,8 +19,8 @@ type repeatedJsonTest struct {
 	Proto   *testpb.Qux
 	Screens []valuerenderer.Screen
 	// TODO Remove once we finished all primitive value renderers parsing
-	// https://github.com/cosmos/cosmos-sdk/pull/13696
-	// https://github.com/cosmos/cosmos-sdk/pull/13853
+	// https://github.com/adminoid/cosmos-sdk/pull/13696
+	// https://github.com/adminoid/cosmos-sdk/pull/13853
 	Parses bool
 }
 

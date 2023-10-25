@@ -6,11 +6,11 @@ import (
 	"cosmossdk.io/math"
 	"gotest.tools/v3/assert"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/distribution/types"
-	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
-	stakingtestutil "github.com/cosmos/cosmos-sdk/x/staking/testutil"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	"github.com/adminoid/cosmos-sdk/x/distribution/types"
+	minttypes "github.com/adminoid/cosmos-sdk/x/mint/types"
+	stakingtestutil "github.com/adminoid/cosmos-sdk/x/staking/testutil"
+	stakingtypes "github.com/adminoid/cosmos-sdk/x/staking/types"
 )
 
 func TestMsgUpdateParams(t *testing.T) {

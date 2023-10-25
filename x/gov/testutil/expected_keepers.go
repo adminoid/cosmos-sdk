@@ -5,9 +5,9 @@ package testutil
 import (
 	math "cosmossdk.io/math"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	bankkeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	bankkeeper "github.com/adminoid/cosmos-sdk/x/bank/keeper"
+	"github.com/adminoid/cosmos-sdk/x/gov/types"
 )
 
 // AccountKeeper extends gov's actual expected AccountKeeper with additional

@@ -1,7 +1,7 @@
 // Package v2 creates in-place store migrations for fixing tracking
 // delegations with vesting accounts.
-// ref: https://github.com/cosmos/cosmos-sdk/issues/8601
-// ref: https://github.com/cosmos/cosmos-sdk/issues/8812
+// ref: https://github.com/adminoid/cosmos-sdk/issues/8601
+// ref: https://github.com/adminoid/cosmos-sdk/issues/8812
 //
 // The migration script modifies x/auth state, hence lives in the `x/auth/legacy`
 // folder. However, it needs access to staking and bank state. To avoid
@@ -12,7 +12,7 @@
 // PLEASE DO NOT REPLICATE THIS PATTERN IN YOUR OWN APP.
 //
 // Proposals to refactor this file have been made in:
-// https://github.com/cosmos/cosmos-sdk/issues/9070
+// https://github.com/adminoid/cosmos-sdk/issues/9070
 // The preferred solution is to use inter-module communication (ADR-033), and
 // this file will be refactored to use ADR-033 once it's ready.
 package v2
@@ -27,13 +27,13 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/x/auth/vesting/exported"
-	vestingtypes "github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/adminoid/cosmos-sdk/baseapp"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	sdkerrors "github.com/adminoid/cosmos-sdk/types/errors"
+	"github.com/adminoid/cosmos-sdk/x/auth/vesting/exported"
+	vestingtypes "github.com/adminoid/cosmos-sdk/x/auth/vesting/types"
+	banktypes "github.com/adminoid/cosmos-sdk/x/bank/types"
+	stakingtypes "github.com/adminoid/cosmos-sdk/x/staking/types"
 )
 
 const (
@@ -285,7 +285,7 @@ func getBondDenom(ctx sdk.Context, queryServer grpc.Server) (string, error) {
 
 // MigrateAccount migrates vesting account to make the DelegatedVesting and DelegatedFree fields correctly
 // track delegations.
-// References: https://github.com/cosmos/cosmos-sdk/issues/8601, https://github.com/cosmos/cosmos-sdk/issues/8812
+// References: https://github.com/adminoid/cosmos-sdk/issues/8601, https://github.com/adminoid/cosmos-sdk/issues/8812
 //
 // We use the baseapp.QueryRouter here to do inter-module state querying.
 // PLEASE DO NOT REPLICATE THIS PATTERN IN YOUR OWN APP.

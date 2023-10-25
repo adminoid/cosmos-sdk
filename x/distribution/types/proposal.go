@@ -1,7 +1,7 @@
 package types
 
 import (
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
+	govtypes "github.com/adminoid/cosmos-sdk/x/gov/types/v1beta1"
 )
 
 // GetTitle returns the title of a community pool spend proposal.

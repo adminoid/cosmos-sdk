@@ -8,17 +8,17 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	bankkeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
-	"github.com/cosmos/cosmos-sdk/x/slashing"
-	slashingkeeper "github.com/cosmos/cosmos-sdk/x/slashing/keeper"
-	"github.com/cosmos/cosmos-sdk/x/slashing/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking"
-	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
-	stakingtestutil "github.com/cosmos/cosmos-sdk/x/staking/testutil"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	codectypes "github.com/adminoid/cosmos-sdk/codec/types"
+	simtestutil "github.com/adminoid/cosmos-sdk/testutil/sims"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	bankkeeper "github.com/adminoid/cosmos-sdk/x/bank/keeper"
+	"github.com/adminoid/cosmos-sdk/x/slashing"
+	slashingkeeper "github.com/adminoid/cosmos-sdk/x/slashing/keeper"
+	"github.com/adminoid/cosmos-sdk/x/slashing/testutil"
+	"github.com/adminoid/cosmos-sdk/x/staking"
+	stakingkeeper "github.com/adminoid/cosmos-sdk/x/staking/keeper"
+	stakingtestutil "github.com/adminoid/cosmos-sdk/x/staking/testutil"
+	stakingtypes "github.com/adminoid/cosmos-sdk/x/staking/types"
 )
 
 func TestBeginBlocker(t *testing.T) {

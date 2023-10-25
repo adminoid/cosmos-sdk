@@ -7,11 +7,11 @@ import (
 	"github.com/stretchr/testify/suite"
 	rpcclientmock "github.com/tendermint/tendermint/rpc/client/mock"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	testutilmod "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/bank"
+	"github.com/adminoid/cosmos-sdk/client"
+	"github.com/adminoid/cosmos-sdk/crypto/keyring"
+	clitestutil "github.com/adminoid/cosmos-sdk/testutil/cli"
+	testutilmod "github.com/adminoid/cosmos-sdk/types/module/testutil"
+	"github.com/adminoid/cosmos-sdk/x/bank"
 )
 
 type CLITestSuite struct {

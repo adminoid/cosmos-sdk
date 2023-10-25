@@ -8,8 +8,8 @@ import (
 	context "context"
 	reflect "reflect"
 
-	types "github.com/cosmos/cosmos-sdk/types"
-	types0 "github.com/cosmos/cosmos-sdk/x/bank/types"
+	types "github.com/adminoid/cosmos-sdk/types"
+	types0 "github.com/adminoid/cosmos-sdk/x/bank/types"
 	gomock "github.com/golang/mock/gomock"
 )
 

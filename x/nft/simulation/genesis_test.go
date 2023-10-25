@@ -8,12 +8,12 @@ import (
 	"github.com/stretchr/testify/require"
 
 	sdkmath "cosmossdk.io/math"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/nft"
-	nftmodule "github.com/cosmos/cosmos-sdk/x/nft/module"
-	"github.com/cosmos/cosmos-sdk/x/nft/simulation"
+	"github.com/adminoid/cosmos-sdk/types/module"
+	moduletestutil "github.com/adminoid/cosmos-sdk/types/module/testutil"
+	simtypes "github.com/adminoid/cosmos-sdk/types/simulation"
+	"github.com/adminoid/cosmos-sdk/x/nft"
+	nftmodule "github.com/adminoid/cosmos-sdk/x/nft/module"
+	"github.com/adminoid/cosmos-sdk/x/nft/simulation"
 )
 
 func TestRandomizedGenState(t *testing.T) {

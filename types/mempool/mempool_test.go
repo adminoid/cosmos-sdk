@@ -10,15 +10,15 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/mempool"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	txsigning "github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/signing"
-	"github.com/cosmos/cosmos-sdk/x/distribution"
-	"github.com/cosmos/cosmos-sdk/x/gov"
+	cryptotypes "github.com/adminoid/cosmos-sdk/crypto/types"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	"github.com/adminoid/cosmos-sdk/types/mempool"
+	moduletestutil "github.com/adminoid/cosmos-sdk/types/module/testutil"
+	simtypes "github.com/adminoid/cosmos-sdk/types/simulation"
+	txsigning "github.com/adminoid/cosmos-sdk/types/tx/signing"
+	"github.com/adminoid/cosmos-sdk/x/auth/signing"
+	"github.com/adminoid/cosmos-sdk/x/distribution"
+	"github.com/adminoid/cosmos-sdk/x/gov"
 )
 
 // testPubKey is a dummy implementation of PubKey used for testing.

@@ -7,9 +7,9 @@ import (
 	"github.com/spf13/cobra"
 	cli2 "github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/x/bank/client/cli"
+	"github.com/adminoid/cosmos-sdk/client"
+	"github.com/adminoid/cosmos-sdk/testutil"
+	"github.com/adminoid/cosmos-sdk/x/bank/client/cli"
 )
 
 // ExecTestCLICmd builds the client context, mocks the output and executes the command.

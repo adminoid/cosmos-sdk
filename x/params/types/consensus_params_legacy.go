@@ -3,7 +3,7 @@ package types
 import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
+	"github.com/adminoid/cosmos-sdk/baseapp"
 )
 
 // Deprecated.

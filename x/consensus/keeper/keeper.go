@@ -3,11 +3,11 @@ package keeper
 import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	storetypes "github.com/cosmos/cosmos-sdk/store/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/consensus/exported"
-	"github.com/cosmos/cosmos-sdk/x/consensus/types"
+	"github.com/adminoid/cosmos-sdk/codec"
+	storetypes "github.com/adminoid/cosmos-sdk/store/types"
+	sdk "github.com/adminoid/cosmos-sdk/types"
+	"github.com/adminoid/cosmos-sdk/x/consensus/exported"
+	"github.com/adminoid/cosmos-sdk/x/consensus/types"
 )
 
 var _ exported.ConsensusParamSetter = (*Keeper)(nil)

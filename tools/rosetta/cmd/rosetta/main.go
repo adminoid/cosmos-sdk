@@ -5,8 +5,8 @@ import (
 
 	rosettaCmd "cosmossdk.io/tools/rosetta/cmd"
 	"cosmossdk.io/tools/rosetta/lib/logger"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
+	"github.com/adminoid/cosmos-sdk/codec"
+	codectypes "github.com/adminoid/cosmos-sdk/codec/types"
 )
 
 func main() {
