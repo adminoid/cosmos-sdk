@@ -3,7 +3,7 @@ package cosmos.base.store.snapshots.v1beta1;
 
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/cosmos/cosmos-sdk/store/snapshots/types";
+option go_package = "github.com/adminoid/cosmos-sdk/store/snapshots/types";
 
 // Snapshot contains Tendermint state sync snapshot info.
 message Snapshot {
