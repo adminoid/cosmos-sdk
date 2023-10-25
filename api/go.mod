@@ -1,5 +1,5 @@
-module cosmossdk.io/api
-//module github.com/adminoid/cosmos-sdk/api
+//module cosmossdk.io/api
+module github.com/adminoid/cosmos-sdk/api
 
 go 1.19
 

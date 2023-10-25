@@ -186,6 +186,7 @@ replace (
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.8.1
 	//cosmossdk.io/api => ../api
 	//cosmossdk.io => ../
+	github.com/adminoid/cosmos-sdk => ./
 )
 
 retract (
