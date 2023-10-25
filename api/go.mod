@@ -1,7 +1,7 @@
-module cosmossdk.io/api
-//module github.com/adminoid/cosmos-sdk/api
+//module cosmossdk.io/api
+module github.com/adminoid/cosmos-sdk/api
 
-go 1.19
+go 1.21.3
 
 require (
 	github.com/cosmos/cosmos-proto v1.0.0-beta.1

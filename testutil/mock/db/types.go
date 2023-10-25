@@ -5,10 +5,9 @@
 package mock
 
 import (
-	reflect "reflect"
-
-	db "github.com/adminoid/cosmos-sdk/db"
-	gomock "github.com/golang/mock/gomock"
+	"reflect"
+	"github.com/adminoid/cosmos-sdk/internal/db"
+	"github.com/golang/mock/gomock"
 )
 
 // MockConnection is a mock of Connection interface.
