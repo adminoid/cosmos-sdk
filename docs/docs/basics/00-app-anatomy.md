@@ -56,7 +56,7 @@ The first thing defined in `app.go` is the `type` of the application. It is gene
 See an example of application type definition from `simapp`, the Cosmos SDK's own app used for demo and testing purposes:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.46.0/simapp/app.go#L151-L193
+https://github.com/adminoid/cosmos-sdk/blob/v0.46.0/simapp/app.go#L151-L193
 ```
 
 ### Constructor Function
@@ -64,7 +64,7 @@ https://github.com/cosmos/cosmos-sdk/blob/v0.46.0/simapp/app.go#L151-L193
 Also defined in `app.go` is the constructor function, which constructs a new application of the type defined in the preceding section. The function must fulfill the `AppCreator` signature in order to be used in the [`start` command](../core/03-node.md#start-command) of the application's daemon command.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.46.0/server/types/app.go#L57-L59
+https://github.com/adminoid/cosmos-sdk/blob/v0.46.0/server/types/app.go#L57-L59
 ```
 
 Here are the main actions performed by this function:
@@ -88,24 +88,24 @@ Note that the constructor function only creates an instance of the app, while th
 See an example of application constructor from `simapp`:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.46.0/simapp/app.go#L204-L474
+https://github.com/adminoid/cosmos-sdk/blob/v0.46.0/simapp/app.go#L204-L474
 ```
 
 ### InitChainer
 
-The `InitChainer` is a function that initializes the state of the application from a genesis file (i.e. token balances of genesis accounts). It is called when the application receives the `InitChain` message from the Tendermint engine, which happens when the node is started at `appBlockHeight == 0` (i.e. on genesis). The application must set the `InitChainer` in its [constructor](#constructor-function) via the [`SetInitChainer`](https://pkg.go.dev/github.com/cosmos/cosmos-sdk/baseapp#BaseApp.SetInitChainer) method.
+The `InitChainer` is a function that initializes the state of the application from a genesis file (i.e. token balances of genesis accounts). It is called when the application receives the `InitChain` message from the Tendermint engine, which happens when the node is started at `appBlockHeight == 0` (i.e. on genesis). The application must set the `InitChainer` in its [constructor](#constructor-function) via the [`SetInitChainer`](https://pkg.go.dev/github.com/adminoid/cosmos-sdk/baseapp#BaseApp.SetInitChainer) method.
 
 In general, the `InitChainer` is mostly composed of the [`InitGenesis`](../building-modules/08-genesis.md#initgenesis) function of each of the application's modules. This is done by calling the `InitGenesis` function of the module manager, which in turn calls the `InitGenesis` function of each of the modules it contains. Note that the order in which the modules' `InitGenesis` functions must be called has to be set in the module manager using the [module manager's](../building-modules/01-module-manager.md) `SetOrderInitGenesis` method. This is done in the [application's constructor](#application-constructor), and the `SetOrderInitGenesis` has to be called before the `SetInitChainer`.
 
 See an example of an `InitChainer` from `simapp`:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.46.0/simapp/app.go#L524-L532
+https://github.com/adminoid/cosmos-sdk/blob/v0.46.0/simapp/app.go#L524-L532
 ```
 
 ### BeginBlocker and EndBlocker
 
-The Cosmos SDK offers developers the possibility to implement automatic execution of code as part of their application. This is implemented through two function called `BeginBlocker` and `EndBlocker`. They are called when the application receives the `BeginBlock` and `EndBlock` messages from the Tendermint engine, which happens respectively at the beginning and at the end of each block. The application must set the `BeginBlocker` and `EndBlocker` in its [constructor](#constructor-function) via the [`SetBeginBlocker`](https://pkg.go.dev/github.com/cosmos/cosmos-sdk/baseapp#BaseApp.SetBeginBlocker) and [`SetEndBlocker`](https://pkg.go.dev/github.com/cosmos/cosmos-sdk/baseapp#BaseApp.SetEndBlocker) methods.
+The Cosmos SDK offers developers the possibility to implement automatic execution of code as part of their application. This is implemented through two function called `BeginBlocker` and `EndBlocker`. They are called when the application receives the `BeginBlock` and `EndBlock` messages from the Tendermint engine, which happens respectively at the beginning and at the end of each block. The application must set the `BeginBlocker` and `EndBlocker` in its [constructor](#constructor-function) via the [`SetBeginBlocker`](https://pkg.go.dev/github.com/adminoid/cosmos-sdk/baseapp#BaseApp.SetBeginBlocker) and [`SetEndBlocker`](https://pkg.go.dev/github.com/adminoid/cosmos-sdk/baseapp#BaseApp.SetEndBlocker) methods.
 
 In general, the `BeginBlocker` and `EndBlocker` functions are mostly composed of the [`BeginBlock` and `EndBlock`](../building-modules/05-beginblock-endblock.md) functions of each of the application's modules. This is done by calling the `BeginBlock` and `EndBlock` functions of the module manager, which in turn calls the `BeginBlock` and `EndBlock` functions of each of the modules it contains. Note that the order in which the modules' `BeginBlock` and `EndBlock` functions must be called has to be set in the module manager using the `SetOrderBeginBlockers` and `SetOrderEndBlockers` methods, respectively. This is done via the [module manager](../building-modules/01-module-manager.md) in the [application's constructor](#application-constructor), and the `SetOrderBeginBlockers` and `SetOrderEndBlockers` methods have to be called before the `SetBeginBlocker` and `SetEndBlocker` functions.
 
@@ -114,7 +114,7 @@ As a sidenote, it is important to remember that application-specific blockchains
 See an example of `BeginBlocker` and `EndBlocker` functions from `simapp`
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.46.0/simapp/app.go#L514-L522
+https://github.com/adminoid/cosmos-sdk/blob/v0.46.0/simapp/app.go#L514-L522
 ```
 
 ### Register Codec
@@ -122,7 +122,7 @@ https://github.com/cosmos/cosmos-sdk/blob/v0.46.0/simapp/app.go#L514-L522
 The `EncodingConfig` structure is the last important part of the `app.go` file. The goal of this structure is to define the codecs that will be used throughout the app.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.46.0/simapp/params/encoding.go#L9-L16
+https://github.com/adminoid/cosmos-sdk/blob/v0.46.0/simapp/params/encoding.go#L9-L16
 ```
 
 Here are descriptions of what each of the four fields means:
@@ -141,7 +141,7 @@ The Cosmos SDK exposes a `MakeTestEncodingConfig` function used to create an `En
 See an example of a `MakeTestEncodingConfig` from `simapp`:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.46.0/simapp/encoding.go#L8-L19
+https://github.com/adminoid/cosmos-sdk/blob/v0.46.0/simapp/encoding.go#L8-L19
 ```
 
 ## Modules
@@ -172,7 +172,7 @@ For more details, see [transaction lifecycle](./01-tx-lifecycle.md).
 Module developers create custom `Msg` services when they build their own module. The general practice is to define the `Msg` Protobuf service in a `tx.proto` file. For example, the `x/bank` module defines a service with two methods to transfer tokens:
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.46.0/proto/cosmos/bank/v1beta1/tx.proto#L12-L19
+https://github.com/adminoid/cosmos-sdk/blob/v0.46.0/proto/cosmos/bank/v1beta1/tx.proto#L12-L19
 ```
 
 Service methods use `keeper` in order to update the module state.

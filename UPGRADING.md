@@ -17,7 +17,7 @@ The SDK is in the process of removing all `gogoproto` annotations.
 #### Stringer
 
 The `gogoproto.goproto_stringer = false` annotation has been removed from most proto files. This means that the `String()` method is being generated for types that previously had this annotation. The generated `String()` method uses `proto.CompactTextString` for _stringifying_ structs.
-[Verify](https://github.com/cosmos/cosmos-sdk/pull/13850#issuecomment-1328889651) the usage of the modified `String()` methods and double-check that they are not used in state-machine code.
+[Verify](https://github.com/adminoid/cosmos-sdk/pull/13850#issuecomment-1328889651) the usage of the modified `String()` methods and double-check that they are not used in state-machine code.
 
 ### SimApp
 
@@ -26,7 +26,7 @@ The `gogoproto.goproto_stringer = false` annotation has been removed from most p
 Previously, all modules were required to be set in `OrderBeginBlockers`, `OrderEndBlockers` and `OrderInitGenesis / OrderExportGenesis` in `app.go` / `app_config.go`.
 This is no longer the case, the assertion has been loosened to only require modules implementing, respectively, the `module.BeginBlockAppModule`, `module.EndBlockAppModule` and `module.HasGenesis` interfaces.
 
-## [v0.47.x](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.47.0)
+## [v0.47.x](https://github.com/adminoid/cosmos-sdk/releases/tag/v0.47.0)
 
 ### Simulation
 
@@ -52,13 +52,13 @@ by this change.
 
 ### SimApp
 
-The `simapp` package **should not be imported in your own app**. Instead, you should import the `runtime.AppI` interface, that defines an `App`, and use the [`simtestutil` package](https://pkg.go.dev/github.com/cosmos/cosmos-sdk/testutil/sims) for application testing.
+The `simapp` package **should not be imported in your own app**. Instead, you should import the `runtime.AppI` interface, that defines an `App`, and use the [`simtestutil` package](https://pkg.go.dev/github.com/adminoid/cosmos-sdk/testutil/sims) for application testing.
 
 #### App Wiring
 
 SimApp's `app_v2.go` is using [App Wiring](https://docs.cosmos.network/main/building-apps/app-go-v2), the dependency injection framework of the Cosmos SDK.
-This means that modules are injected directly into SimApp thanks to a [configuration file](https://github.com/cosmos/cosmos-sdk/blob/main/simapp/app_config.go).
-The previous behavior, without the dependency injection framework, is still present in [`app.go`](https://github.com/cosmos/cosmos-sdk/blob/main/simapp/app.go) and is not going anywhere.
+This means that modules are injected directly into SimApp thanks to a [configuration file](https://github.com/adminoid/cosmos-sdk/blob/main/simapp/app_config.go).
+The previous behavior, without the dependency injection framework, is still present in [`app.go`](https://github.com/adminoid/cosmos-sdk/blob/main/simapp/app.go) and is not going anywhere.
 
 If you are using a `app.go` without dependency injection, add the following lines to your `app.go` in order to provide newer gRPC services:
 
@@ -223,7 +223,7 @@ Ledger support has been generalized to enable use of different apps and keytypes
 
 This is not a breaking change, as all values will default to use the standard Cosmos app implementation unless specified otherwise.
 
-## [v0.46.x](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.46.0)
+## [v0.46.x](https://github.com/adminoid/cosmos-sdk/releases/tag/v0.46.0)
 
 ### Go API Changes
 
@@ -246,7 +246,7 @@ To improve clarity of the API, some renaming and improvements has been done:
 | `x/gov`   | `keeper.RefundDeposits`            | `keeper.RefundAndDeleteDeposits`     |
 | `x/{mod}` | package `legacy`                   | package `migrations`                 |
 
-For the exhaustive list of API renaming, please refer to the [CHANGELOG](https://github.com/cosmos/cosmos-sdk/blob/main/CHANGELOG.md).
+For the exhaustive list of API renaming, please refer to the [CHANGELOG](https://github.com/adminoid/cosmos-sdk/blob/main/CHANGELOG.md).
 
 #### new packages
 
@@ -303,7 +303,7 @@ mistakes.
 
 #### `x/params`
 
-* The `x/params` module has been depreacted in favour of each module housing and providing way to modify their parameters. Each module that has parameters that are changable during runtime have an authority, the authority can be a module or user account. The Cosmos-SDK team recommends migrating modules away from using the param module. An example of how this could look like can be found [here](https://github.com/cosmos/cosmos-sdk/pull/12363). 
+* The `x/params` module has been depreacted in favour of each module housing and providing way to modify their parameters. Each module that has parameters that are changable during runtime have an authority, the authority can be a module or user account. The Cosmos-SDK team recommends migrating modules away from using the param module. An example of how this could look like can be found [here](https://github.com/adminoid/cosmos-sdk/pull/12363). 
 * The Param module will be maintained until April 18, 2023. At this point the module will reach end of life and be removed from the Cosmos SDK.
 
 #### `x/gov`
@@ -320,7 +320,7 @@ The `staking module` added a new message type to cancel unbonding delegations. U
 
 ### Protobuf
 
-The `third_party/proto` folder that existed in [previous version](https://github.com/cosmos/cosmos-sdk/tree/v0.45.3/third_party/proto) now does not contains directly the [proto files](https://github.com/cosmos/cosmos-sdk/tree/release/v0.46.x/third_party/proto).
+The `third_party/proto` folder that existed in [previous version](https://github.com/adminoid/cosmos-sdk/tree/v0.45.3/third_party/proto) now does not contains directly the [proto files](https://github.com/adminoid/cosmos-sdk/tree/release/v0.46.x/third_party/proto).
 
 Instead, the SDK uses [`buf`](https://buf.build). Clients should have their own [`buf.yaml`](https://docs.buf.build/configuration/v1/buf-yaml) with `buf.build/cosmos/cosmos-sdk` as dependency, in order to avoid having to copy paste these files.
 

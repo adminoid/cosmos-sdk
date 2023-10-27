@@ -179,18 +179,18 @@ proposal but accept the result of the vote.
 
 #### Weighted Votes
 
-[ADR-037](https://github.com/cosmos/cosmos-sdk/blob/main/docs/architecture/adr-037-gov-split-vote.md) introduces the weighted vote feature which allows a staker to split their votes into several voting options. For example, it could use 70% of its voting power to vote Yes and 30% of its voting power to vote No.
+[ADR-037](https://github.com/adminoid/cosmos-sdk/blob/main/docs/architecture/adr-037-gov-split-vote.md) introduces the weighted vote feature which allows a staker to split their votes into several voting options. For example, it could use 70% of its voting power to vote Yes and 30% of its voting power to vote No.
 
 Often times the entity owning that address might not be a single individual. For example, a company might have different stakeholders who want to vote differently, and so it makes sense to allow them to split their voting power. Currently, it is not possible for them to do "passthrough voting" and giving their users voting rights over their tokens. However, with this system, exchanges can poll their users for voting preferences, and then vote on-chain proportionally to the results of the poll.
 
 To represent weighted vote on chain, we use the following Protobuf message.
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.46.0/proto/cosmos/gov/v1beta1/gov.proto#L33-L43
+https://github.com/adminoid/cosmos-sdk/blob/v0.46.0/proto/cosmos/gov/v1beta1/gov.proto#L33-L43
 ```
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.46.0/proto/cosmos/gov/v1beta1/gov.proto#L136-L150
+https://github.com/adminoid/cosmos-sdk/blob/v0.46.0/proto/cosmos/gov/v1beta1/gov.proto#L136-L150
 ```
 
 For a weighted vote to be valid, the `options` field must not contain duplicate vote options, and the sum of weights of all options must be equal to 1.
@@ -264,7 +264,7 @@ Once a block contains more than 2/3rd *precommits* where a common
 nodes, non-validating full nodes and light-nodes) are expected to switch to the
 new version of the software.
 
-Validators and full nodes can use an automation tool, such as [Cosmovisor](https://github.com/cosmos/cosmos-sdk/blob/main/tools/cosmovisor/README.md), for automatically switching version of the chain.
+Validators and full nodes can use an automation tool, such as [Cosmovisor](https://github.com/adminoid/cosmos-sdk/blob/main/tools/cosmovisor/README.md), for automatically switching version of the chain.
 
 ## State
 
@@ -277,7 +277,7 @@ unique id and contains a series of timestamps: `submit_time`, `deposit_end_time`
 `voting_start_time`, `voting_end_time` which track the lifecycle of a proposal
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.46.0/proto/cosmos/gov/v1/gov.proto#L42-L59
+https://github.com/adminoid/cosmos-sdk/blob/v0.46.0/proto/cosmos/gov/v1/gov.proto#L42-L59
 ```
 
 A proposal will generally require more than just a set of messages to explain its
@@ -325,19 +325,19 @@ parameter set has to be created and the previous one rendered inactive.
 #### DepositParams
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.46.0/proto/cosmos/gov/v1/gov.proto#L102-L112
+https://github.com/adminoid/cosmos-sdk/blob/v0.46.0/proto/cosmos/gov/v1/gov.proto#L102-L112
 ```
 
 #### VotingParams
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.46.0/proto/cosmos/gov/v1/gov.proto#L114-L118
+https://github.com/adminoid/cosmos-sdk/blob/v0.46.0/proto/cosmos/gov/v1/gov.proto#L114-L118
 ```
 
 #### TallyParams
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.46.0/proto/cosmos/gov/v1/gov.proto#L120-L132
+https://github.com/adminoid/cosmos-sdk/blob/v0.46.0/proto/cosmos/gov/v1/gov.proto#L120-L132
 ```
 
 Parameters are stored in a global `GlobalParams` KVStore.
@@ -377,7 +377,7 @@ const (
 ### Deposit
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.46.0/proto/cosmos/gov/v1/gov.proto#L34-L40
+https://github.com/adminoid/cosmos-sdk/blob/v0.46.0/proto/cosmos/gov/v1/gov.proto#L34-L40
 ```
 
 ### ValidatorGovInfo
@@ -502,7 +502,7 @@ Proposals can be submitted by any account via a `MsgSubmitProposal`
 transaction.
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.46.0/proto/cosmos/gov/v1/tx.proto#L33-L43
+https://github.com/adminoid/cosmos-sdk/blob/v0.46.0/proto/cosmos/gov/v1/tx.proto#L33-L43
 ```
 
 All `sdk.Msgs` passed into the `messages` field of a `MsgSubmitProposal` message
@@ -573,7 +573,7 @@ Once a proposal is submitted, if
 `MsgDeposit` transactions to increase the proposal's deposit.
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.46.0/proto/cosmos/gov/v1/tx.proto#L90-L97
+https://github.com/adminoid/cosmos-sdk/blob/v0.46.0/proto/cosmos/gov/v1/tx.proto#L90-L97
 ```
 
 **State modifications:**
@@ -641,7 +641,7 @@ bonded Atom holders are able to send `MsgVote` transactions to cast their
 vote on the proposal.
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.46.0/proto/cosmos/gov/v1/tx.proto#L64-L72
+https://github.com/adminoid/cosmos-sdk/blob/v0.46.0/proto/cosmos/gov/v1/tx.proto#L64-L72
 ```
 
 **State modifications:**

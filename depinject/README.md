@@ -14,7 +14,7 @@ sidebar_position: 1
 
 ## Usage
 
-`depinject` includes an expressive and composable [Configuration API](https://pkg.go.dev/github.com/cosmos/cosmos-sdk/depinject#Config).
+`depinject` includes an expressive and composable [Configuration API](https://pkg.go.dev/github.com/adminoid/cosmos-sdk/depinject#Config).
 A core configuration function is `Provide`. The example below demonstrates the registration of free **provider functions** via the `Provide` API.
 
 
@@ -53,7 +53,7 @@ Provider functions form the basis of the dependency tree, they are introspected 
 ### Interface type resolution
 
 `depinject` supports interface types as inputs to provider functions.  In the SDK's case this pattern is used to decouple
-`Keeper` dependencies between modules.  For example `x/bank` expects an [AccountKeeper](https://pkg.go.dev/github.com/cosmos/cosmos-sdk/x/bank/types#AccountKeeper) interface as [input to provideModule](https://github.com/cosmos/cosmos-sdk/blob/de343d458aa68c19630177807d6f0e2e6deaf7a9/x/bank/module.go#L224).
+`Keeper` dependencies between modules.  For example `x/bank` expects an [AccountKeeper](https://pkg.go.dev/github.com/adminoid/cosmos-sdk/x/bank/types#AccountKeeper) interface as [input to provideModule](https://github.com/adminoid/cosmos-sdk/blob/de343d458aa68c19630177807d6f0e2e6deaf7a9/x/bank/module.go#L224).
 
 Concretely `SimApp` uses the implementation in `x/auth`, but this design allows for this loose coupling to change.
 
@@ -141,7 +141,7 @@ When using `depinject.Inject`, the injected types must be pointers.
 :::
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.47.0-alpha1/simapp/app.go#L241-L266
+https://github.com/adminoid/cosmos-sdk/blob/v0.47.0-alpha1/simapp/app.go#L241-L266
 ```
 
 ## Debugging

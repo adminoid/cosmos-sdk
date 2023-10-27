@@ -26,7 +26,7 @@ Protobuf-based SIGN_MODE_DIRECT was introduced in [ADR-020](./adr-020-protobuf-t
 * SIGN_MODE_DIRECT is binary-based and thus not suitable for display to end-users. Technically, hardware wallets could simply display the sign bytes to the user. But this would be considered as blind signing, and is a security concern.
 * hardware cannot decode the protobuf sign bytes due to memory constraints, as the Protobuf definitions would need to be embedded on the hardware device.
 
-In an effort to remove Amino from the SDK, a new sign mode needs to be created for hardware devices. [Initial discussions](https://github.com/cosmos/cosmos-sdk/issues/6513) propose a text-based sign mode, which this ADR formally specifies.
+In an effort to remove Amino from the SDK, a new sign mode needs to be created for hardware devices. [Initial discussions](https://github.com/adminoid/cosmos-sdk/issues/6513) propose a text-based sign mode, which this ADR formally specifies.
 
 ## Decision
 
@@ -266,7 +266,7 @@ Moreover, the renderer must provide 2 functions: one for formatting from Protobu
 
 ### Require signing over the `TxBody` and `AuthInfo` raw bytes
 
-Recall that the transaction bytes merklelized on chain are the Protobuf binary serialization of [TxRaw](https://github.com/cosmos/cosmos-sdk/blob/v0.46.0/proto/cosmos/tx/v1beta1/tx.proto#L33), which contains the `body_bytes` and `auth_info_bytes`. Moreover, the transaction hash is defined as the SHA256 hash of the `TxRaw` bytes. We require that the user signs over these bytes in SIGN_MODE_TEXTUAL, more specifically over the following string:
+Recall that the transaction bytes merklelized on chain are the Protobuf binary serialization of [TxRaw](https://github.com/adminoid/cosmos-sdk/blob/v0.46.0/proto/cosmos/tx/v1beta1/tx.proto#L33), which contains the `body_bytes` and `auth_info_bytes`. Moreover, the transaction hash is defined as the SHA256 hash of the `TxRaw` bytes. We require that the user signs over these bytes in SIGN_MODE_TEXTUAL, more specifically over the following string:
 
 ```
 *Hash of raw bytes: <HEX(sha256(len(body_bytes) ++ body_bytes ++ len(auth_info_bytes) ++ auth_info_bytes))>
@@ -619,7 +619,7 @@ SIGN_MODE_TEXTUAL is purely additive, and doesn't break any backwards compatibil
 
 * [Annex 1](./adr-050-sign-mode-textual-annex1.md)
 
-* Initial discussion: https://github.com/cosmos/cosmos-sdk/issues/6513
+* Initial discussion: https://github.com/adminoid/cosmos-sdk/issues/6513
 * Living document used in the working group: https://hackmd.io/fsZAO-TfT0CKmLDtfMcKeA?both
 * Working group meeting notes: https://hackmd.io/7RkGfv_rQAaZzEigUYhcXw
 * Ethereum's "Described Transactions" https://github.com/ethereum/EIPs/pull/4430

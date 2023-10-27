@@ -38,7 +38,7 @@ it would like the block constructed.
 Currently, there is a default `PrepareProposal` implementation provided by the application.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/main/baseapp/baseapp.go#L870-L908
+https://github.com/adminoid/cosmos-sdk/blob/main/baseapp/baseapp.go#L870-L908
 ```
 
 This default implementation can be overridden by the application developer in
@@ -68,7 +68,7 @@ proposal is proposed.
 Here is the implementation of the default implementation:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.47.0-alpha2/baseapp/baseapp.go#L911-L935
+https://github.com/adminoid/cosmos-sdk/blob/v0.47.0-alpha2/baseapp/baseapp.go#L911-L935
 ```
 
 Like `PrepareProposal` this implementation is the default and can be modified by the application developer in [`app.go`](./01-app-go-v2.md):
@@ -127,7 +127,7 @@ Set the seed for the random number generator used to select transactions from th
 
 ### Priority Nonce Mempool
 
-The [priority nonce mempool](https://github.com/cosmos/cosmos-sdk/blob/main/types/mempool/priority_nonce_spec.md) is a mempool implementation that stores txs in a partially ordered set by 2 dimensions:
+The [priority nonce mempool](https://github.com/adminoid/cosmos-sdk/blob/main/types/mempool/priority_nonce_spec.md) is a mempool implementation that stores txs in a partially ordered set by 2 dimensions:
 
 * priority
 * sender-nonce (sequence number)
@@ -148,4 +148,4 @@ It is an integer value that sets the mempool in one of three modes, *bounded*, *
 
 Allow to set a callback to be called when a transaction is read from the mempool.
 
-More information on the SDK mempool implementation can be found in the [godocs](https://pkg.go.dev/github.com/cosmos/cosmos-sdk/types/mempool).
+More information on the SDK mempool implementation can be found in the [godocs](https://pkg.go.dev/github.com/adminoid/cosmos-sdk/types/mempool).

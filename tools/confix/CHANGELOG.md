@@ -31,4 +31,4 @@ Ref: https://keepachangelog.com/en/1.0.0/
 
 ## [Unreleased]
 
-* [#14342](https://github.com/cosmos/cosmos-sdk/pull/14342) Add `confix` tool to manage configuration files.
+* [#14342](https://github.com/adminoid/cosmos-sdk/pull/14342) Add `confix` tool to manage configuration files.

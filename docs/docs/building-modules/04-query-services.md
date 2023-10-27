@@ -22,7 +22,7 @@ A Protobuf Query service processes [`queries`](./02-messages-and-queries.md#quer
 The `querier` type defined in the Cosmos SDK will be deprecated in favor of [gRPC Services](#grpc-service). It specifies the typical structure of a `querier` function:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.46.0/types/queryable.go#L9
+https://github.com/adminoid/cosmos-sdk/blob/v0.46.0/types/queryable.go#L9
 ```
 
 Let us break it down:
@@ -52,7 +52,7 @@ from the store. Therefore, the Cosmos SDK provides a function `sdk.UnwrapSDKCont
 Here's an example implementation for the bank module:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.46.0/x/bank/keeper/grpc_query.go
+https://github.com/adminoid/cosmos-sdk/blob/v0.46.0/x/bank/keeper/grpc_query.go
 ```
 
 ### Calling queries from the State Machine
